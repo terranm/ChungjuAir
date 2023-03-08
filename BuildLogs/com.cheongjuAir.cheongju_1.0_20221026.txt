@@ -1,0 +1,288 @@
+[World Settings]
+world id             com.cheongjuair.cheongju
+version              1.0                 
+max clients          8                   
+orientation          horizontal          
+disable invite       false               
+disable room list    false               
+disable private room false               
+
+[Build Manifest]
+[scenes]
+16 mb                assets/scenes/chungju_airport.unity
+[assets]
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_off.anim
+2 mb                 assets/res/image/ui/특산물 팝업/new folder/6 익스트림루지.png
+9 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.017.mesh
+21 kb                assets/res/env/potiani/kory_face.png
+1 mb                 assets/res/env/chungju_airport/texture/c_ground.png
+3 kb                 assets/res/env/chungju_airport/model/objmodel/plane.198.mesh
+1 kb                 assets/res/env/chungju_airport/shader_code/gradation.shader
+2 kb                 assets/res/env/chungju_airport/shader_code/water_shader.shader
+35 kb                packages/zepeto.character.controller/runtime/_resources/inputactions/zepetoinputcontrol.inputactions
+2 kb                 assets/res/env/chungju_airport/material/청주공항 1.mat
+600 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingslight.anim
+7 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.025.mesh
+130 kb               assets/res/env/chungju_airport/texture/kac.png
+249 kb               assets/res/env/npc/prefabs/woman_npc_2_seller_3.prefab
+4 kb                 assets/res/image/ui/ox퀴즈/버튼 x.png
+8 kb                 assets/res/image/ui/버튼 모음/버튼 체크.png
+8 kb                 assets/res/env/chungju_airport/texture/sub_water 1.jpg
+116 b                assets/res/env/chungju_airport/texture/light_light_metallic.png
+617 kb               assets/res/env/chungju_airport/texture/c_bunsu.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/walk.anim
+2 kb                 assets/res/env/chungju_airport/material/color 1.mat
+739 kb               assets/res/image/ui/특산물 팝업/new folder/1 사과.png
+1 kb                 assets/res/env/chungju_airport/new lighting settings.lighting
+226 kb               assets/res/env/npc/prefabs/man_ani_lookround.prefab
+2 kb                 assets/res/env/npc/res_woman/mat/eye_r_col_512.mat
+22 kb                assets/res/env/chungju_airport/model/objmodel/object_114.002.mesh
+2 kb                 assets/res/env/chungju_airport/material/c_mt.mat
+2 mb                 assets/res/env/npc/res_woman/model/woman_npc_2_seller_3.fbx
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_move.anim
+2 kb                 assets/res/image/ui/버튼 모음/x버튼1.png
+27 kb                packages/zepeto.character.controller/runtime/_resources/prefabs/uicontroller_touchpad_horizontal.prefab
+546 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingroll.anim
+37 kb                assets/res/image/ui/상단 팝업/3 선물상자 얻어주세요.png
+2 kb                 assets/res/env/npc/res_woman/mat/face_col_512.mat
+36 kb                assets/res/env/npc/res_woman/tex/eyelashes_mask_512.png
+8 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.018.mesh
+2 kb                 assets/res/env/chungju_airport/material/c_ground.mat
+27 kb                packages/zepeto.character.controller/runtime/_resources/prefabs/uicontroller_touchpad_vertical.prefab
+1 mb                 assets/res/image/ui/퀘스트/퀘스트창11.png
+2 kb                 assets/res/env/npc/prefabs/office_chair_012__1_.004 (1).prefab
+1 kb                 packages/com.unity.inputsystem/inputsystem/editor/icons/inputsystemuiinputmodule@64.png
+40 kb                assets/res/image/ui/상단 팝업/1 여권 찾아주세요.png
+3 kb                 assets/res/image/ui/popup/click 1.png
+50 kb                assets/res/env/npc/res_woman/tex/face_col_512.png
+2 mb                 assets/res/env/chungju_airport/texture/c_mt.png
+423 kb               assets/res/env/chungju_airport/model/objmodel/box001.001.mesh
+2 kb                 assets/res/env/chungju_airport/material/청주공항.mat
+2 kb                 assets/res/env/chungju_airport/material/water.mat
+34 kb                assets/res/image/ui/버튼 모음/받기 버튼.png
+15 kb                assets/res/image/ui/버튼 모음/ok 버튼.png
+442 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpmove.anim
+71 kb                assets/res/env/npc/res_man/tex/man_eyelashes_col_512.png
+580 kb               assets/res/env/chungju_airport/texture/sky_summer.png
+27 kb                assets/res/image/ui/버튼 모음/버튼 티켓.png
+2 kb                 assets/res/env/materials/carrier 3.mat
+26 kb                assets/res/env/chungju_airport/model/objmodel/3dgeom-5755.002.mesh
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/gesture.anim
+281 kb               assets/res/env/chungju_airport/texture/colorchart.png
+410 kb               assets/res/env/potiani/poti_ani_jump.fbx
+18 kb                packages/zepeto.character.controller/runtime/_resources/animatorcontroller/zepetoanimator.controller
+127 kb               assets/res/image/ui/ox퀴즈/q2.png
+59 kb                assets/res/env/materials/sparkle.png
+327 kb               assets/res/env/chungju_airport/texture/bio-self-plus.png
+2 kb                 assets/res/env/chungju_airport/material/inpong.mat
+304 kb               assets/res/anim/animator/zepetoanimatorv2.controller
+184 kb               assets/res/env/npc/prefabs/woman_npc_1_poti_2.prefab
+2 mb                 assets/res/image/ui/로딩화면/로딩1.png
+2 mb                 assets/res/env/chungju_airport/model/objmodel/3dgeom-181.mesh
+4 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.010 1.mesh
+560 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/idle.anim
+27 kb                assets/res/image/ui/버튼 모음/버튼 티켓 활성화.png
+5 kb                 assets/res/env/camera.prefab
+3 mb                 assets/res/anim/animation/zepetobasemodel.prefab
+1 mb                 assets/res/image/ui/특산물 팝업/new folder/2 대추.png
+43 kb                assets/res/env/chungju_airport/model/objmodel/woman_npc_2_seller_modelilng.fbx
+1 mb                 assets/res/anim/animation/player_carrier.fbx
+172 kb               assets/res/env/potiani/kory_1k.png
+380 kb               assets/res/image/ui/기타/할머니 답례2.png
+46 kb                assets/res/image/ui/상단 팝업/2 캐리어 찾아주세요.png
+2 kb                 assets/res/env/potiani/kory_1k.mat
+295 kb               packages/zepeto.character.controller/runtime/_resources/animatorcontroller/zepetoanimatorv2.controller
+1 mb                 assets/res/env/chungju_airport/texture/청주공항.png
+48 kb                assets/res/image/ui/상단 팝업/5 버스티켓 획득해 주세요.png
+1 mb                 assets/res/image/ui/ox퀴즈/포티탈 획득.png
+374 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moverunfast.anim
+828 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moveturn.anim
+1 mb                 assets/res/env/chungju_airport/texture/청주공항-1.png
+35 kb                assets/res/image/ui/상단 팝업/8 입국심사대 통과하세요.png
+42 kb                assets/res/env/npc/res_man/tex/man_face_col_512.png
+2 kb                 assets/res/env/npc/res_man/ani/man_npc_1_sitting_2.controller
+26 kb                assets/res/anim/animator/zepetonpcanimator.controller
+30 kb                assets/res/env/npc/res_woman/tex/eye_l_col_512.png
+513 kb               assets/res/image/ui/퀘스트/퀘스트창9.png
+416 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moverun.anim
+2 kb                 assets/res/env/npc/res_man/mat/npc_man01_eye_l_col_512.mat
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_idle.anim
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_off.anim
+1 kb                 assets/res/env/potiani/potijump.controller
+655 b                assets/res/env/chungju_airport/texture/light_light_normal.png
+2 kb                 assets/res/env/npc/res_woman/ani/woman_npc_2_seller_3.controller
+4 kb                 assets/res/env/chungju_airport/shader_code/water.shader
+367 kb               assets/res/env/chungju_airport/texture/ipjubong.png
+502 kb               assets/res/image/ui/퀘스트/퀘스트창1.png
+1 kb                 assets/res/env/potiani/potimove.controller
+521 kb               assets/res/image/ui/퀘스트/퀘스트창7 2.png
+282 kb               assets/res/env/potiani/poti_ani_move.fbx
+978 kb               assets/res/env/chungju_airport/texture/c_bridge.png
+1 mb                 assets/res/image/ui/특산물 팝업/new folder/5 패러글라이딩.png
+5 kb                 packages/zepeto.character.controller/runtime/_resources/images/touchpad_handle_icon.png
+2 kb                 assets/res/env/chungju_airport/material/zepeto_color.mat
+3 kb                 assets/res/env/chungju_airport/model/objmodel/cloudplane.mesh
+5 kb                 packages/zepeto.character.controller/runtime/_resources/images/touchpad_jump_icon.png
+24 kb                assets/res/env/teleport2/circle5.png
+44 kb                assets/res/image/ui/상단 팝업/9 입국장 나가주세요.png
+2 kb                 assets/res/env/npc/res_man/mat/npc_man_eyelashes_shd.mat
+116 kb               assets/res/env/chungju_airport/texture/kac-a.png
+8 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.016.mesh
+2 kb                 assets/res/env/chungju_airport/material/kac-1.mat
+2 kb                 assets/res/env/chungju_airport/material/c_dam.mat
+2 kb                 assets/res/env/npc/res_man/mat/npc_man01_face_shd.mat
+728 kb               assets/res/env/chungju_airport/texture/cp_plants_01.png
+3 kb                 assets/res/env/npc/prefabs/charactershadow(clone).prefab
+2 kb                 assets/res/env/chungju_airport/material/cbs.mat
+2 kb                 assets/res/env/chungju_airport/material/color.mat
+199 kb               assets/res/image/ui/ox퀴즈/q1.png
+662 kb               assets/res/env/chungju_airport/model/objmodel/box_001.004.mesh
+1 mb                 assets/res/env/chungju_airport/texture/land_to_land.001_basecolor.png
+1 mb                 assets/res/env/7. master of fishing.mp3
+42 kb                assets/res/env/chungju_airport/model/objmodel/cloud/ct_ba_cloud_obj_02_base.mesh
+461 kb               assets/res/image/ui/퀘스트/퀘스트창5.png
+2 kb                 assets/res/env/potiani/eye-mouse.mat
+42 kb                assets/res/image/ui/상단 팝업/13 ox 떨어짐.png
+464 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpdouble.anim
+4 mb                 assets/res/anim/animation/man_npc_2_zipline_2.fbx
+1 kb                 assets/res/env/npc/res_woman/ani/woman_npc_1_poti_2.controller
+7 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.023.mesh
+13 kb                packages/zepeto.character.controller/runtime/_resources/images/touchpad_handle_base.png
+34 kb                assets/res/env/chungju_airport/model/skysphere.fbx
+24 mb                assets/res/env/chungju_airport/model/chungju_setting_1018.fbx
+28 kb                assets/res/env/npc/res_man/tex/zepeto_colorchart.png
+290 kb               assets/res/env/chungju_airport/texture/cp_ground_tile_02.png
+1 kb                 assets/res/env/potiani/potihi.controller
+18 kb                assets/res/image/ui/버튼 모음/x버튼2 복사 3.png
+429 kb               assets/res/image/ui/퀘스트/퀘스트창3.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/action1.anim
+2 kb                 assets/res/env/materials/carrier 4.mat
+408 b                assets/res/env/chungju_airport/texture/light_light_basecolor.png
+1 mb                 assets/res/anim/animation/grandmother_ani_08.fbx
+3 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_ziggle.anim
+40 kb                assets/res/image/ui/상단 팝업/12 ox 틀림.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_on.anim
+136 kb               assets/res/env/npc/res_woman/tex/eyelashes_col_512.png
+838 kb               assets/res/env/chungju_airport/texture/wood.png
+134 kb               assets/res/image/ui/ox퀴즈/q4.png
+2 kb                 assets/res/env/teleport2/teleport_gradient 1.mat
+2 kb                 assets/res/env/chungju_airport/material/plainring.mat
+2 kb                 assets/res/env/chungju_airport/material/bottom.mat
+3 mb                 assets/res/env/npc/res_woman/model/woman_npc_1_poti_2.fbx
+9 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.019.mesh
+2 mb                 assets/res/image/ui/로딩화면/로딩2.png
+423 kb               assets/res/env/chungju_airport/model/objmodel/box001.004.mesh
+49 kb                assets/res/image/ui/상단 팝업/4 할머니 짐찾아줘 대사.png
+2 kb                 assets/res/env/chungju_airport/material/cloud.mat
+2 kb                 assets/res/env/chungju_airport/material/colorchart.mat
+30 kb                assets/res/env/npc/res_man/tex/eye_r_col_512.png
+2 kb                 assets/res/env/chungju_airport/material/bio-self.mat
+2 kb                 assets/res/env/npc/res_man/mat/npc_man01_eye_r_shd.mat
+52 kb                assets/res/env/chungju_airport/model/objmodel/cloud/ct_ba_cloud_obj_01_base.mesh
+2 kb                 assets/res/env/chungju_airport/material/cp_plants_01.mat
+230 kb               assets/res/env/npc/prefabs/man_npc_1_sitting_2.prefab
+30 kb                assets/res/env/npc/res_man/tex/eye_l_col_512.png
+515 kb               assets/res/env/chungju_airport/model/objmodel/office_chair_012__1_.004.mesh
+7 kb                 packages/zepeto.character.controller/runtime/_resources/animatorcontroller/uicontrollertouchpadhandleorigin.controller
+837 kb               assets/res/image/ui/기타/kakaotalk_20221014_093108500.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/action2.anim
+2 kb                 assets/res/env/chungju_airport/material/c_bridge.mat
+2 kb                 assets/res/env/chungju_airport/material/sky.mat
+551 kb               assets/res/env/chungju_airport/texture/티켓.png
+2 kb                 assets/res/env/teleport2/teleport_circle.mat
+7 kb                 packages/zepeto.character.controller/runtime/_resources/animatorcontroller/uicontrollertouchpadhandle.controller
+2 kb                 assets/res/env/chungju_airport/material/c_bunsu.mat
+143 kb               assets/res/env/chungju_airport/texture/summer_cloud.png
+1 kb                 assets/res/env/npc/res_woman/ani/woman_ani_hi02.controller
+451 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpdash.anim
+6 kb                 assets/res/env/chungju_airport/shader_code/tree_leaf.shader
+46 kb                assets/res/image/ui/상단 팝업/10 티켓 확인 완료.png
+461 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/movewalkfast.anim
+3 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/charactershadow.prefab
+2 kb                 assets/res/env/chungju_airport/material/tiket.mat
+1 mb                 assets/res/env/chungju_airport/texture/c_dam.png
+360 b                assets/res/anim/hand avatar mask.mask
+1 kb                 assets/res/env/npc/res_man/ani/man_ani_lookround.controller
+12 kb                packages/zepeto.character.controller/runtime/_resources/images/touchpad_jump_base.png
+40 mb                assets/res/env/chungju_airport/model/청주공항_ver1019.fbx
+4 mb                 assets/res/env/npc/res_man/model/man_npc_1_sitting_2.fbx
+2 kb                 assets/res/env/materials/carrier 5.mat
+24 kb                assets/res/env/chungju_airport/model/chungju_settingcolider 1.fbx
+119 kb               assets/res/env/chungju_airport/model/objmodel/cylinder.004.mesh
+5 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/6_dance.anim
+877 kb               assets/res/image/ui/특산물 팝업/new folder/3 포도.png
+22 kb                assets/res/env/teleport2/circle4.png
+41 kb                assets/res/image/ui/상단 팝업/6 ox 클리어해주세요.png
+2 kb                 assets/res/env/materials/cho_m.mat
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_on.anim
+2 kb                 assets/res/env/materials/carrier 2.mat
+1 kb                 assets/res/env/potiani/kory.controller
+4 mb                 assets/res/env/npc/res_man/model/man_ani_lookround.fbx
+1 mb                 assets/res/env/potiani/poti_ani_hi.fbx
+1 mb                 assets/res/image/ui/특산물 팝업/new folder/4 스카이트레일.png
+2 kb                 assets/res/env/chungju_airport/material/glass.mat
+1 mb                 assets/res/env/chungju_airport/model/objmodel/object.mesh
+2 kb                 assets/res/env/chungju_airport/material/water_fok.mat
+1 mb                 assets/res/anim/animation/dream_chair_ani01.fbx
+2 kb                 assets/res/env/npc/res_woman/mat/eyelashes_col_512 1.mat
+3 mb                 assets/res/env/chungju_airport/texture/1f-2f_material_basecolor.png
+150 kb               assets/res/image/ui/ox퀴즈/q5.png
+2 kb                 assets/res/env/chungju_airport/material/c_wood.mat
+1 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.png
+2 kb                 assets/res/env/materials/carrier 6.mat
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/4_ok.anim
+158 kb               assets/res/env/chungju_airport/model/objmodel/poti_ani_move_modeling.fbx
+30 kb                assets/res/env/npc/res_woman/tex/eye_r_col_512.png
+2 kb                 assets/res/env/teleport2/teleport_gradient.mat
+2 kb                 assets/res/image/ui/버튼 모음/x버튼2.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingdeep.anim
+1 mb                 assets/res/anim/animation/ani_hand_can.fbx
+2 kb                 assets/res/env/chungju_airport/material/light.mat
+514 kb               assets/res/image/ui/퀘스트/퀘스트창10.png
+2 kb                 assets/res/env/chungju_airport/material/colortexture_001.mat
+301 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/falling.anim
+172 b                assets/res/env/chungju_airport/texture/light_light_roughness.png
+2 kb                 assets/res/env/materials/carrier 1.mat
+5 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.015.mesh
+182 kb               assets/res/image/ui/ox퀴즈/q3.png
+618 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpidle.anim
+451 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/stamp.anim
+3 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/5_sleep.anim
+529 b                assets/res/env/chungju_airport/shader_code/lagacydiffuseculloff.shader
+422 kb               assets/res/image/ui/퀘스트/퀘스트창2.png
+28 kb                assets/res/env/chungju_airport/texture/zepeto_colorchart.png
+661 kb               assets/res/env/chungju_airport/model/objmodel/box_001.002.mesh
+940 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/run.anim
+2 kb                 assets/res/env/chungju_airport/material/bottom 1.mat
+37 kb                assets/res/image/ui/상단 팝업/7 여권 획득했어요.png
+4 kb                 assets/res/image/ui/ox퀴즈/버튼 o.png
+2 kb                 assets/res/env/npc/res_woman/mat/eye_l_col_512.mat
+398 kb               assets/res/env/potiani/kory_hi_ani.fbx
+2 kb                 assets/res/env/materials/de.mat
+170 b                assets/res/env/chungju_airport/texture/light_light_height.png
+3 mb                 assets/res/env/npc/res_woman/model/woman_ani_hi02.fbx
+141 kb               assets/res/env/chungju_airport/texture/water 1.png
+11 kb                assets/res/env/chungju_airport/model/objmodel/box001.002.mesh
+1 mb                 assets/res/image/ui/기타/충주호 행 버스티켓 획득.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/v2/movewalk.anim
+44 kb                assets/res/image/ui/상단 팝업/11 카메라 켜졌어요.png
+7 kb                 assets/res/env/chungju_airport/model/objmodel/door/3dgeom-5410_7.024.mesh
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.mat
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/eventsystem.prefab
+1014 kb              packages/zepeto.character.controller/runtime/_resources/animations/base/v2/idle.anim
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/fall_end.anim
+324 kb               assets/res/env/chungju_airport/texture/1.png
+331 kb               assets/res/env/chungju_airport/texture/delete/cbs_ground_rock.png
+509 kb               assets/res/image/ui/퀘스트/퀘스트창8.png
+793 kb               assets/res/image/img.jpg
+36 kb                assets/res/image/ui/버튼 모음/착용 버튼.png
+395 b                assets/res/env/chungju_airport/texture/light_light_emissive.png
+428 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/hand_idle_01.anim
+31 kb                packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions
+476 kb               assets/res/image/ui/퀘스트/퀘스트창6.png
+183 kb               assets/res/env/npc/prefabs/woman_ani_hi02.prefab
+431 kb               assets/res/image/ui/퀘스트/퀘스트창 4-3.png
+3 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_ziggle.anim
+[resources]
+0 b                  assets/resources    
+[streamingAssets]

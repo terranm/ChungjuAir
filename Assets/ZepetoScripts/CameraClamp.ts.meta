@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: e3a662f4305a78b4cb7cfd4fabb43e67
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass CameraClamp extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Init(min, max, speed) {\r\n        this.min = min;\r\n        this.max
+    = max;\r\n        this.speed = speed;\r\n        this.isInit = true;\r\n    }\r\n   
+    LateUpdate() {\r\n        if (this.isInit) {\r\n            var angleX = this.ClampAngle(this.transform.eulerAngles.x,
+    this.min, this.max);\r\n            //this.transform.rotation = Quaternion.Euler(new
+    Vector3(this.transform.eulerAngles.x, angleY, this.transform.eulerAngles.z));\r\n           
+    var a = this.transform.rotation;\r\n            var b = UnityEngine_1.Quaternion.Euler(new
+    UnityEngine_1.Vector3(angleX, this.transform.eulerAngles.y, this.transform.eulerAngles.z));\r\n           
+    this.transform.rotation = UnityEngine_1.Quaternion.Lerp(a, b, UnityEngine_1.Time.deltaTime
+    * this.speed);\r\n        }\r\n    }\r\n    ClampAngle(current, min, max) {\r\n       
+    var dtAngle = UnityEngine_1.Mathf.Abs(((min - max) + 180) % 360 - 180);\r\n       
+    var hdtAngle = dtAngle * 0.5;\r\n        var midAngle = min + hdtAngle;\r\n       
+    var offset = UnityEngine_1.Mathf.Abs(UnityEngine_1.Mathf.DeltaAngle(current,
+    midAngle)) - hdtAngle;\r\n        if (offset > 0)\r\n            current = UnityEngine_1.Mathf.MoveTowardsAngle(current,
+    midAngle, offset);\r\n        return current;\r\n    }\r\n}\r\nexports.default
+    = CameraClamp;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FtZXJhQ2xhbXAuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDYW1lcmFDbGFtcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2Q0FBNEU7QUFHNUUsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQVNuRCxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsRUFBRSxLQUFLO1FBRXZCLElBQUksQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDO1FBQ2YsSUFBSSxDQUFDLEdBQUcsR0FBRyxHQUFHLENBQUM7UUFDZixJQUFJLENBQUMsS0FBSyxHQUFHLEtBQUssQ0FBQztRQUVuQixJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQztJQUN2QixDQUFDO0lBRUQsVUFBVTtRQUVOLElBQUksSUFBSSxDQUFDLE1BQU0sRUFBRTtZQUViLElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxXQUFXLENBQUMsQ0FBQyxFQUFFLElBQUksQ0FBQyxHQUFHLEVBQUUsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1lBRy9FLDhIQUE4SDtZQUU5SCxJQUFJLENBQUMsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQztZQUNoQyxJQUFJLENBQUMsR0FBRyx3QkFBVSxDQUFDLEtBQUssQ0FBQyxJQUFJLHFCQUFPLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxTQUFTLENBQUMsV0FBVyxDQUFDLENBQUMsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLFdBQVcsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQzFHLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLHdCQUFVLENBQUMsSUFBSSxDQUFDLENBQUMsRUFBRSxDQUFDLEVBQUUsa0JBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxDQUFDO1NBQ2hGO0lBRUwsQ0FBQztJQUVELFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxFQUFFLEdBQUc7UUFDeEIsSUFBSSxPQUFPLEdBQUcsbUJBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsR0FBRyxHQUFHLENBQUMsR0FBRyxHQUFHLENBQUMsR0FBRyxHQUFHLEdBQUcsR0FBRyxDQUFDLENBQUM7UUFDekQsSUFBSSxRQUFRLEdBQUcsT0FBTyxHQUFHLEdBQUcsQ0FBQztRQUM3QixJQUFJLFFBQVEsR0FBRyxHQUFHLEdBQUcsUUFBUSxDQUFDO1FBRTlCLElBQUksTUFBTSxHQUFHLG1CQUFLLENBQUMsR0FBRyxDQUFDLG1CQUFLLENBQUMsVUFBVSxDQUFDLE9BQU8sRUFBRSxRQUFRLENBQUMsQ0FBQyxHQUFHLFFBQVEsQ0FBQztRQUN2RSxJQUFJLE1BQU0sR0FBRyxDQUFDO1lBQ1YsT0FBTyxHQUFHLG1CQUFLLENBQUMsZ0JBQWdCLENBQUMsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLENBQUMsQ0FBQztRQUNoRSxPQUFPLE9BQU8sQ0FBQztJQUNuQixDQUFDO0NBRUo7QUE3Q0QsOEJBNkNDIn0=","assetPath":"Assets/ZepetoScripts/preset/CameraClamp.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"isInit","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CameraClamp","description":""},"isCompiled":true}'
+  typescriptHash: 87d1e415b56ad3a9839de33a71ff7718
+  onlyWriteTrigger: 0

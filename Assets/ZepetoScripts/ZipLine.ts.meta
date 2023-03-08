@@ -1,0 +1,54 @@
+fileFormatVersion: 2
+guid: b9a204a6cd622904ca6043da3e640b3f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst GameManager_1 = require(\"./GameManager\");\r\n//import
+    PlayerCtrl from ''./PlayerCtrl'';\r\nclass ZipLine extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        //  public
+    _points : Transform[] = new Array();\r\n        this._cnt = 1;\r\n        this.speed
+    = 3;\r\n    }\r\n    Move(points, speed) {\r\n        if (this._cnt < points.length
+    - 1) {\r\n            this.speed += speed;\r\n        }\r\n        else {\r\n           
+    if (this.speed > 0.5) {\r\n                this.speed -= (speed * 3);\r\n           
+    }\r\n        }\r\n        this.transform.position = UnityEngine_1.Vector3.MoveTowards(this.transform.position,
+    points[this._cnt].position, this.speed * UnityEngine_1.Time.deltaTime);\r\n       
+    //console.log(\"speed \" + this.speed);\r\n        let dir = UnityEngine_1.Vector3.zero;\r\n       
+    dir = (UnityEngine_1.Vector3.op_Subtraction(points[this._cnt].position, this.transform.position)).normalized;\r\n       
+    let dist = UnityEngine_1.Vector3.Distance(points[this._cnt].position, this.transform.position);\r\n       
+    if (dist > 0.5) {\r\n            this.transform.rotation = UnityEngine_1.Quaternion.Slerp(this.transform.rotation,
+    UnityEngine_1.Quaternion.LookRotation(dir), UnityEngine_1.Time.deltaTime * 1);\r\n       
+    }\r\n        else {\r\n            if (this._cnt + 1 < points.length) {\r\n               
+    dir = (UnityEngine_1.Vector3.op_Subtraction(points[this._cnt++].position, this.transform.position)).normalized;\r\n           
+    }\r\n            else if (this._cnt + 1 > points.length) {\r\n               
+    dir = (UnityEngine_1.Vector3.op_Subtraction(points[0].position, this.transform.position)).normalized;\r\n           
+    }\r\n            this.transform.rotation = UnityEngine_1.Quaternion.Slerp(this.transform.rotation,
+    UnityEngine_1.Quaternion.LookRotation(dir), UnityEngine_1.Time.deltaTime * 1);\r\n       
+    }\r\n        //this.transform.LookAt(this.foodPos[this.foodNum].transform.position);\r\n       
+    if (UnityEngine_1.Vector3.op_Equality(this.transform.position, points[this._cnt].position))
+    {\r\n            dir = new UnityEngine_1.Vector3((points[this._cnt].position.x
+    - this.transform.position.x), (points[this._cnt].position.y - this.transform.position.y),
+    0).normalized;\r\n            //this.transform.rotation = Quaternion.LookRotation(this.dir);\r\n           
+    this._cnt++;\r\n        }\r\n        // if (this.foodNum == 11 && this.number
+    == 0 && !this.isDown) {\r\n        //     this.StopDown();\r\n        // }\r\n       
+    return this._cnt == points.length;\r\n        // if (this._cnt == this._points.Length)
+    {\r\n        //     this._cnt = 0;\r\n        // }\r\n    }\r\n}\r\nexports.default
+    = ZipLine;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWmlwTGluZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlppcExpbmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSw2Q0FBeUY7QUFDekYsaURBQXFEO0FBQ3JELCtDQUF3QztBQUN4Qyx3Q0FBd0M7QUFFeEMsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUExRDs7UUFDSSwrQ0FBK0M7UUFDdkMsU0FBSSxHQUFZLENBQUMsQ0FBQztRQUNsQixVQUFLLEdBQVksQ0FBQyxDQUFDO0lBNkMvQixDQUFDO0lBM0NHLElBQUksQ0FBQyxNQUFrQixFQUFFLEtBQVk7UUFDakMsSUFBSSxJQUFJLENBQUMsSUFBSSxHQUFHLE1BQU0sQ0FBQyxNQUFNLEdBQUcsQ0FBQyxFQUFDO1lBQzlCLElBQUksQ0FBQyxLQUFLLElBQUksS0FBSyxDQUFDO1NBQ3ZCO2FBQ0k7WUFDRCxJQUFJLElBQUksQ0FBQyxLQUFLLEdBQUcsR0FBRyxFQUFDO2dCQUNqQixJQUFJLENBQUMsS0FBSyxJQUFJLENBQUMsS0FBSyxHQUFHLENBQUMsQ0FBQyxDQUFDO2FBQzdCO1NBQ0o7UUFDRCxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxxQkFBTyxDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsS0FBSyxHQUFHLGtCQUFJLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDaEkscUNBQXFDO1FBQ3JDLElBQUksR0FBRyxHQUFZLHFCQUFPLENBQUMsSUFBSSxDQUFDO1FBQ2hDLEdBQUcsR0FBRyxDQXRCOEMscUJBQU8sQ0FxRDYzbUIsY0FBZSxDQS9CaDhtQixNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsRUFBRyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBQyxDQUFDLFVBQVUsQ0FBQztRQUN4RSxJQUFJLElBQUksR0FBRyxxQkFBTyxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFBO1FBQ2hGLElBQUksSUFBSSxHQUFHLEdBQUcsRUFBRTtZQUNaLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLHdCQUFVLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFFLHdCQUFVLENBQUMsWUFBWSxDQUFDLEdBQUcsQ0FBQyxFQUFFLGtCQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQyxDQUFDO1NBQ3pIO2FBQ0k7WUFDRCxJQUFJLElBQUksQ0FBQyxJQUFJLEdBQUUsQ0FBQyxHQUFHLE1BQU0sQ0FBQyxNQUFNLEVBQUU7Z0JBQzlCLEdBQUcsR0FBRyxDQTdCc0MscUJBQU8sQ0FxRDYzbUIsY0FBZSxDQXhCeDdtQixNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUMsUUFBUSxFQUFHLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFDLENBQUMsVUFBVSxDQUFDO2FBQzdFO2lCQUFNLElBQUksSUFBSSxDQUFDLElBQUksR0FBRyxDQUFDLEdBQUcsTUFBTSxDQUFDLE1BQU0sRUFBQztnQkFDckMsR0FBRyxHQUFHLENBL0JzQyxxQkFBTyxDQXFENjNtQixjQUFlLENBdEJ4N21CLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxRQUFRLEVBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUMsQ0FBQyxVQUFVLENBQUM7YUFDbkU7WUFFRCxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyx3QkFBVSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSx3QkFBVSxDQUFDLFlBQVksQ0FBQyxHQUFHLENBQUMsRUFBRSxrQkFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUMsQ0FBQztTQUN6SDtRQUVELHVFQUF1RTtRQUV2RSxJQXZDb0QscUJBQU8sQ0FxRGkzbkIsV0FBWSxDQWRwN25CLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFJLE1BQU0sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUMsUUFBUSxHQUFDO1lBQ3RELEdBQUcsR0FBRyxJQUFJLHFCQUFPLENBQUMsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsQ0FBQyxDQUFDLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDLFFBQVEsQ0FBQyxDQUFDLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLENBQUMsVUFBVSxDQUFDO1lBQ3hKLDhEQUE4RDtZQUM5RCxJQUFJLENBQUMsSUFBSSxFQUFFLENBQUM7U0FDZjtRQUVELGdFQUFnRTtRQUNoRSx1QkFBdUI7UUFDdkIsSUFBSTtRQUNKLE9BQU8sSUFBSSxDQUFDLElBQUksSUFBSSxNQUFNLENBQUMsTUFBTSxDQUFDO1FBQ2xDLDBDQUEwQztRQUMxQyxxQkFBcUI7UUFDckIsSUFBSTtJQUNSLENBQUM7Q0FDSjtBQWhERCwwQkFnREMifQ==","assetPath":"Assets/ZepetoScripts/ZipLine.ts","manifest":{"properties":[],"name":"ZipLine","description":""},"isCompiled":true}'
+  typescriptHash: e8e1f85ac1c4c0b908700958d3f4eff7
+  onlyWriteTrigger: 0

@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 11233463ca97cda45b933be9254148c8
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst GameManager_1 = require(\"./GameManager\");\r\nclass
+    OXFailed extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.trlist = new Array();\r\n        this.trlist = this.targetTr.parent.GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n   
+    }\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.tag === \"Player\")
+    {\r\n            this.trlist.forEach((tr) => {\r\n                console.log(this.trlist.length
+    + \" \" + tr.name);\r\n                tr.gameObject.SetActive(true);\r\n           
+    });\r\n            switch (this.howFail) {\r\n                case 0:\r\n                   
+    GameManager_1.default.UI.Popup(\"Popup_Upper-OXFail\", GameManager_1.default.instance.GetPopupTime);\r\n                   
+    break;\r\n                case 1:\r\n                    GameManager_1.default.UI.Popup(\"Popup_Upper-OXFallen\",
+    GameManager_1.default.instance.GetPopupTime);\r\n                    break;\r\n           
+    }\r\n            //coll.gameObject.transform.GetComponentInChildren<PlayerCtrl>().Teleport(this.targetPlace.position);
+    //new Vector3(-29,66,-123)\r\n        }\r\n    }\r\n}\r\nexports.default = OXFailed;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT1hGYWlsZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPWEZhaWxlZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFrRDtBQUNsRCxpREFBcUQ7QUFDckQsK0NBQXdDO0FBRXhDLE1BQXFCLFFBQVMsU0FBUSxxQ0FBcUI7SUFPdkQsS0FBSztRQUNELElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxLQUFLLEVBQUUsQ0FBQztRQUMxQixJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLHVCQUF1QixTQUFDLHVCQUFTLEVBQUcsQ0FBQztJQUM1RSxDQUFDO0lBQ0QsY0FBYyxDQUFDLElBQWU7UUFDMUIsSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsS0FBSyxRQUFRLEVBQUM7WUFDaEMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLENBQUMsQ0FBQyxFQUFFLEVBQUMsRUFBRTtnQkFDdEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLE1BQU0sR0FBRyxHQUFHLEdBQUUsRUFBRSxDQUFDLElBQUksQ0FBQyxDQUFDO2dCQUMvQyxFQUFFLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUNsQyxDQUFDLENBQUMsQ0FBQztZQUNILFFBQU8sSUFBSSxDQUFDLE9BQU8sRUFBRTtnQkFDakIsS0FBSyxDQUFDO29CQUNGLHFCQUFXLENBQUMsRUFBRSxDQUFDLEtBQUssQ0FBQyxvQkFBb0IsRUFBRSxxQkFBVyxDQUFDLFFBQVEsQ0FBQyxZQUFZLENBQUMsQ0FBQztvQkFDOUUsTUFBTTtnQkFDVixLQUFLLENBQUM7b0JBQ0YscUJBQVcsQ0FBQyxFQUFFLENBQUMsS0FBSyxDQUFDLHNCQUFzQixFQUFFLHFCQUFXLENBQUMsUUFBUSxDQUFDLFlBQVksQ0FBQyxDQUFDO29CQUNoRixNQUFNO2FBQ2I7WUFDRCxnSUFBZ0k7U0FDbkk7SUFDTCxDQUFDO0NBRUo7QUE3QkQsMkJBNkJDIn0=","assetPath":"Assets/ZepetoScripts/OXFailed.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"targetTr","type":"UnityEngine.Transform","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"howFail","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"OXFailed","description":""},"isCompiled":true}'
+  typescriptHash: 5b8d034e6cb6b2e55fc47748b27acdf4
+  onlyWriteTrigger: 0

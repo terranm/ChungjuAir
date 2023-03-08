@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 399628c58f9cd5c4fb4d39f19cac541d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst CableCarMove_1 = require(\"./CableCarMove\");\r\nclass
+    CableCarCtrl extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.Points = new Array();\r\n       
+    this.Cars = new Array();\r\n        this.WaitTime = 3;\r\n        this.Speed
+    = 5;\r\n    }\r\n    Start() {\r\n        this.Points = this.transform.GetChild(0).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n       
+    this.Cars = this.transform.GetChild(1).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n       
+    this.Points.shift();\r\n        this.Cars.shift();\r\n        this.StartNum =
+    new Array(1, 2, 2, 3, 3, 4);\r\n        for (let i = 0; i < this.Cars.length;
+    i++) {\r\n            this.Cars.splice(i + 1, 2);\r\n        }\r\n        this.Cars.forEach(carTr
+    => {\r\n            let carMove = carTr.GetComponent($typeof(CableCarMove_1.default));\r\n           
+    carMove._points = this.Points;\r\n            carMove._speed = this.Speed;\r\n           
+    carTr.gameObject.SetActive(false);\r\n        });\r\n        this.StartCoroutine(this.CarsStarter());\r\n   
+    }\r\n    *CarsStarter() {\r\n        let i = 0;\r\n        while (true) {\r\n           
+    this.Cars[i++].gameObject.SetActive(true);\r\n            i == this.Cars.length
+    ? i = 0 : i;\r\n            yield new UnityEngine_1.WaitForSeconds(this.WaitTime);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = CableCarCtrl;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FibGVDYXJDdHJsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2FibGVDYXJDdHJsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1FO0FBQ25FLGlEQUFxRDtBQUNyRCxpREFBMEM7QUFFMUMsTUFBcUIsWUFBYSxTQUFRLHFDQUFxQjtJQUEvRDs7UUFFVyxXQUFNLEdBQWlCLElBQUksS0FBSyxFQUFFLENBQUM7UUFDbkMsU0FBSSxHQUFpQixJQUFJLEtBQUssRUFBRSxDQUFDO1FBR2pDLGFBQVEsR0FBWSxDQUFDLENBQUM7UUFDdEIsVUFBSyxHQUFZLENBQUMsQ0FBQztJQWdDOUIsQ0FBQztJQTlCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyx1QkFBdUIsU0FBQyx1QkFBUyxFQUFHLENBQUM7UUFDOUUsSUFBSSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyx1QkFBdUIsU0FBQyx1QkFBUyxFQUFHLENBQUM7UUFFNUUsSUFBSSxDQUFDLE1BQU0sQ0FBQyxLQUFLLEVBQUUsQ0FBQztRQUNwQixJQUFJLENBQUMsSUFBSSxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ2xCLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxLQUFLLENBQUMsQ0FBQyxFQUFDLENBQUMsRUFBQyxDQUFDLEVBQUMsQ0FBQyxFQUFDLENBQUMsRUFBQyxDQUFDLENBQUMsQ0FBQztRQUV2QyxLQUFJLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQyxFQUFFLEVBQUM7WUFDcEMsSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQyxHQUFDLENBQUMsRUFBQyxDQUFDLENBQUMsQ0FBQTtTQUMzQjtRQUVELElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxFQUFFO1lBQ3RCLElBQUksT0FBTyxHQUFHLEtBQUssQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFBO1lBQ2hELE9BQU8sQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQztZQUM5QixPQUFPLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUM7WUFDNUIsS0FBSyxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDdEMsQ0FBQyxDQUFDLENBQUM7UUFFSCxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFFTyxDQUFDLFdBQVc7UUFDaEIsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQ1YsT0FBTSxJQUFJLEVBQUM7WUFDUCxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUMsRUFBRSxDQUFDLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUMxQyxDQUFDLElBQUksSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQyxNQUFNLElBQUksNEJBQWMsQ0FBQyxJQUFJLENBQUMsUUFBUSxDQUFDLENBQUM7U0FDM0M7SUFDTCxDQUFDO0NBQ0o7QUF2Q0QsK0JBdUNDIn0=","assetPath":"Assets/ZepetoScripts/preset/CableCarCtrl.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"Points","type":"UnityEngine.Transform[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"Cars","type":"UnityEngine.Transform[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"StartNum","type":"System.Single[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"WaitTime","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"Speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CableCarCtrl","description":""},"isCompiled":true}'
+  typescriptHash: 262ad35b2cef96dbbcfd9b07da196bd5

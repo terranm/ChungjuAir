@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 74badc8113126e84ebd3cf01f2f412df
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    ZEPETO_World_1 = require(\\\"ZEPETO.World\\\");\\r\\nconst ZEPETO_Character_Controller_1
+    = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ResourcesManager_1 = require(\\\"./ResourcesManager\\\");\\r\\nconst UIManagers_1
+    = require(\\\"./UIManagers\\\");\\r\\nconst ZipLine_1 = require(\\\"./ZipLine\\\");\\r\\nconst
+    DataSc_1 = require(\\\"./DataSc\\\");\\r\\nconst PhotozoneColl_1 = require(\\\"./PhotozoneColl\\\");\\r\\nclass
+    GameManager extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    constructor()
+    {\\r\\n        super(...arguments);\\r\\n        this.__resource = new ResourcesManager_1.default();\\r\\n       
+    this.__ui = new UIManagers_1.default();\\r\\n        this._popupTime = 2;\\r\\n       
+    ////\\r\\n        this.portyMaskMap = new Map(); // \uC544\uC774\uD15C \uCC29\uC6A9\uC790
+    \uB9AC\uC2A4\uD2B8\\r\\n        this.portyMaskOrignMap = new Map(); // \uC6D0\uB798
+    \uCC29\uC6A9\uD55C \uC544\uC774\uD15C \uC800\uC7A5\\r\\n        this.isInPhotozone
+    = false;\\r\\n        ////\\r\\n        //// \uC785\uAD6D \uC2EC\uC0AC\uB300\\r\\n       
+    this.passportMap = new Map();\\r\\n        this.disembarkationCardMap = new Map();\\r\\n       
+    this.isPassEntry = false;\\r\\n        this.isTakePassport = false;\\r\\n       
+    this.isTakeDisembarkationCard = false;\\r\\n        ////\\r\\n        //// \uCE90\uB9AC\uC5B4
+    \uCC3E\uAE30\\r\\n        this.isCarrierEntry = false;\\r\\n        this.isTakeCarrier
+    = false;\\r\\n        this.isOXEnd = false;\\r\\n        ////\\r\\n        ////
+    \uD560\uBA38\uB2C8 \uBD07\uC9D0\\r\\n        this.isGetGranmasBusTicket = false;\\r\\n       
+    this.isTakeGranmaBag = false;\\r\\n        // public Teleport(transform : Transform){
+    // \uD154\uB808\uD3EC\uD2B8 \uC774\uC0C1\uD560\uB54C \uC0AC\uC6A9\uD568.. \uACE0\uCCD0\uC57C
+    \uD560 \uD544\uC694 \uC788\uC74C\\r\\n        //     ZepetoPlayers.instance.controllerData.inputAsset.Disable();\\r\\n       
+    //     ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.StopMoving();\\r\\n       
+    //     this.StartCoroutine(this.TeleportDelay(transform));\\r\\n        // }\\r\\n       
+    // private *TeleportDelay(transform: Transform){\\r\\n        //     let isTeleporting
+    = true;\\r\\n        //     while(isTeleporting){\\r\\n        //         yield
+    null;\\r\\n        //         ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.StopMoving();\\r\\n       
+    //         ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.Teleport(transform.position,
+    transform.rotation);\\r\\n        //         yield new WaitForSeconds(0.1);\\r\\n       
+    //         let dist = Vector3.Distance(transform.position, ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.position);\\r\\n       
+    //         if(dist < 0.5){\\r\\n        //             isTeleporting = false;\\r\\n       
+    //         }\\r\\n        //     }\\r\\n        //     ZepetoPlayers.instance.controllerData.inputAsset.Enable();\\r\\n       
+    //     this.StopCoroutine(this.TeleportDelay(transform));\\r\\n        // }\\r\\n       
+    /// \uC544\uC774\uD15C \uBD80\uCC29 \uBC0F \uC560\uB2C8\uBA54\uC774\uC158 \uBCC0\uACBD\\r\\n       
+    this.handObj = new Array();\\r\\n        ////\\r\\n    }\\r\\n    static get
+    instance() { return this.Instance; }\\r\\n    static get Resource() { return
+    this.Instance.__resource; }\\r\\n    static get UI() { return this.Instance.__ui;
+    }\\r\\n    static get Room() { return this.Instance.room; }\\r\\n    get GetPopupTime()
+    { return this._popupTime; }\\r\\n    //// \uCD08\uAE30 \uC138\uD305\\r\\n   
+    Awake() {\\r\\n        GameManager.Instance = this;\\r\\n        this.multiplay
+    = UnityEngine_1.GameObject.Find(\\\"WorldMultiplay\\\").GetComponent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay));\\r\\n       
+    GameManager.UI.Init();\\r\\n        this.multiplay.add_RoomCreated((room) =>
+    {\\r\\n            this.room = room;\\r\\n            this.room.AddMessageHandler(\\\"QuestDelay\\\",
+    (message) => {\\r\\n                // print server message\\r\\n               
+    let _message = message.toString();\\r\\n                this.StartCoroutine(this.QuestDelayPopup(_message));\\r\\n           
+    });\\r\\n        });\\r\\n    }\\r\\n    *QuestDelayPopup(message, time = 1)
+    {\\r\\n        yield new UnityEngine_1.WaitForSeconds(time);\\r\\n        GameManager.UI.Popup(\\\"Popup_Quest-\\\"
+    + message);\\r\\n    }\\r\\n    Start() {\\r\\n        GameManager.UI.loadingUI.gameObject.SetActive(true);\\r\\n       
+    this.StartCoroutine(this.StartLoading(GameManager.UI.loadingUI));\\r\\n    }\\r\\n   
+    *StartLoading(loadingUI) {\\r\\n        let isLoadEnd = false;\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.controllerData.inputAsset.Disable();\\r\\n       
+    while (!isLoadEnd) {\\r\\n            yield new UnityEngine_1.WaitForSeconds(3);\\r\\n           
+    if (this.room != null && this.room.IsConnected) {\\r\\n                if (ZEPETO_Character_Controller_1.ZepetoPlayers.instance.HasPlayer(this.room.SessionId))
+    {\\r\\n                    isLoadEnd = true;\\r\\n                    loadingUI.gameObject.SetActive(false);\\r\\n                   
+    GameManager.instance.NextQuest(\\\"1\\\");\\r\\n                    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.controllerData.inputAsset.Enable();\\r\\n                   
+    this.StopCoroutine(this.StartLoading(GameManager.UI.loadingUI));\\r\\n               
+    }\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n    // Update(){\\r\\n   
+    //     console.log(\\\"QuestNum : \\\" + GameManager.player.quest + \\\", positionCheck
+    GM : \\\" + GameManager.player.transform.position.x + \\\", loc : \\\" + ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.position.x);\\r\\n   
+    // }\\r\\n    ////\\r\\n    //// \uBCF4\uC870 \uD568\uC218\\r\\n    CourutineStarter(fun)
+    {\\r\\n        this.StartCoroutine(fun);\\r\\n    }\\r\\n    CourutineStopper(fun)
+    {\\r\\n        this.StartCoroutine(fun);\\r\\n    }\\r\\n    TakePassport() {\\r\\n       
+    if (this.isTakePassport)\\r\\n            return;\\r\\n        this.HoldSomething(\\\"Passport\\\",
+    new UnityEngine_1.Vector3(0.12, 0.04, -0.1), new UnityEngine_1.Vector3(0, 0,
+    0), 2);\\r\\n        this.isTakePassport = true;\\r\\n        this.StartCoroutine(this.TakePassCheck());\\r\\n       
+    GameManager.UI.Popup(\\\"Popup_Upper-TakePassport\\\", this._popupTime);\\r\\n   
+    }\\r\\n    TakeDisembarkationCard() {\\r\\n        if (this.isTakeDisembarkationCard)\\r\\n           
+    return;\\r\\n        this.HoldSomething(\\\"DisembarkationCard\\\", new UnityEngine_1.Vector3(0.074,
+    0.04, -0.01), new UnityEngine_1.Vector3(0, 0, 0), 2);\\r\\n        this.isTakeDisembarkationCard
+    = true;\\r\\n        this.StartCoroutine(this.TakePassCheck());\\r\\n       
+    // GameManager.UI.Popup(\\\"Popup_Upper-TakeDisembarkationCard\\\", this._popupTime);\\r\\n   
+    }\\r\\n    *TakePassCheck() {\\r\\n        if (this.isTakePassport && this.isTakeDisembarkationCard)
+    {\\r\\n            yield new UnityEngine_1.WaitForSeconds(this._popupTime);\\r\\n           
+    GameManager.UI.Popup(\\\"Popup_Upper-OnPassportEntry\\\", this._popupTime);\\r\\n       
+    }\\r\\n    }\\r\\n    TakeCarrier() {\\r\\n        if (this.isTakeCarrier)\\r\\n           
+    return;\\r\\n        this.HoldSomething(\\\"MyCarrier\\\", new UnityEngine_1.Vector3(0.13,
+    0.05, -0.4), new UnityEngine_1.Vector3(-70, 0, 180), 1);\\r\\n        GameManager.UI.Popup(\\\"Popup_Upper-TakeCarrier\\\",
+    this._popupTime);\\r\\n        this.isTakeCarrier = true;\\r\\n    }\\r\\n   
+    OutCarrier(passPoint) {\\r\\n        if (!this.isCarrierEntry) {\\r\\n           
+    if (this.isTakeCarrier) {\\r\\n                this.NextQuest(\\\"4\\\");\\r\\n               
+    this.CloseQuestPart(\\\"2\\\");\\r\\n                this.DestroyHandObj();\\r\\n               
+    GameManager.Resource.Destroy(passPoint.parent.GetChild(1).gameObject);\\r\\n               
+    //this.Teleport(passPoint);\\r\\n            }\\r\\n            else {\\r\\n               
+    GameManager.UI.Popup(\\\"Popup_Upper-OffCarrierEntry\\\", this.GetPopupTime);\\r\\n           
+    }\\r\\n        }\\r\\n    }\\r\\n    ////\\r\\n    //// OX\uD034\uC988\\r\\n   
+    //\uD3EC\uD2F0\uD0C8 \uD68D\uB4DD\\r\\n    GetPortyMask() {\\r\\n        //if
+    (!GameManager.player.isPortyMask){\\r\\n        this.room.Send(\\\"PortyMask\\\",
+    true);\\r\\n        GameManager.UI.Popup(\\\"Popup_Get-Treasure\\\");\\r\\n       
+    GameManager.UI.canvasObj.transform.GetChild(0).GetChild(2).gameObject.SetActive(true);\\r\\n       
+    this.WearPortyMask(this.room.SessionId);\\r\\n        this.isOXEnd = true;\\r\\n       
+    //}\\r\\n    }\\r\\n    OXEndCheck(btnObj) {\\r\\n        console.log(this.isOXEnd);\\r\\n       
+    if (this.isOXEnd) {\\r\\n            this.NextQuest(\\\"6\\\");\\r\\n           
+    this.Teleport(btnObj.transform.parent.GetChild(0));\\r\\n            this.CloseQuestPart(\\\"4\\\");\\r\\n           
+    GameManager.Resource.Destroy(btnObj);\\r\\n        }\\r\\n        else {\\r\\n           
+    GameManager.UI.Popup(\\\"Popup_Upper-TreasureCheck\\\", this._popupTime);\\r\\n       
+    }\\r\\n    }\\r\\n    TakeGranmaBag() {\\r\\n        if (this.isTakeGranmaBag)\\r\\n           
+    return;\\r\\n        this.HoldSomething(\\\"GranmaBag\\\", new UnityEngine_1.Vector3(0.062,
+    -0.01, 0.1), new UnityEngine_1.Vector3(0, 90, -90), 2);\\r\\n        this.isTakeGranmaBag
+    = true;\\r\\n    }\\r\\n    GranmaCheck(btnObj) {\\r\\n        if (!this.isGetGranmasBusTicket)
+    {\\r\\n            if (this.isTakeGranmaBag) {\\r\\n                this.GranmaHandOver();\\r\\n               
+    this.isGetGranmasBusTicket = true;\\r\\n                GameManager.Resource.Destroy(btnObj);\\r\\n               
+    GameManager.UI.Popup(\\\"Popup_Get-GranmaTicket\\\");\\r\\n            }\\r\\n           
+    else {\\r\\n                GameManager.UI.Popup(\\\"Popup_Upper-GranmaUpper\\\",
+    this._popupTime);\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n    AirPortDoorCheck(door)
+    {\\r\\n        if (this.isGetGranmasBusTicket) {\\r\\n            door.SetActive(false);\\r\\n       
+    }\\r\\n    }\\r\\n    GranmaHandOver() {\\r\\n        let handTs = this.granma.GetChild(0).GetChild(1).GetChild(2)\\r\\n           
+    .GetChild(0).GetChild(1).GetChild(2).GetChild(1)\\r\\n            .GetChild(1).GetChild(0).GetChild(1).GetChild(0);\\r\\n       
+    let lochandObj = GameManager.Resource.Instantiate(\\\"GranmaBag\\\", handTs);\\r\\n       
+    lochandObj.transform.localPosition = new UnityEngine_1.Vector3(-0.116370723,
+    0.0922279954, 0.00241758651);\\r\\n        lochandObj.transform.localRotation
+    = UnityEngine_1.Quaternion.Euler(new UnityEngine_1.Vector3(343.373993, 65.5889511,
+    188.081711));\\r\\n        this.DestroyHandObj();\\r\\n    }\\r\\n    BusCheck(btnObj)
+    {\\r\\n        if (this.isGetGranmasBusTicket) {\\r\\n            GameManager.Resource.Destroy(btnObj.transform.parent.GetChild(0).gameObject);\\r\\n           
+    GameManager.Resource.Destroy(btnObj);\\r\\n            GameManager.UI.Popup(\\\"Popup_Upper-TicketPass\\\",
+    this._popupTime);\\r\\n        }\\r\\n        else {\\r\\n            GameManager.UI.Popup(\\\"Popup_Upper-TicketCheck\\\",
+    this._popupTime);\\r\\n        }\\r\\n    }\\r\\n    ZipRideSetting(points, speed)
+    {\\r\\n        this.zipPoints = new Array();\\r\\n        this.zipPoints = points;\\r\\n       
+    this.zipSpeed = speed;\\r\\n    }\\r\\n    ZipRide(obj) {\\r\\n        if (this.isZipStart)\\r\\n           
+    return;\\r\\n        obj.SetActive(false);\\r\\n        let zipLine = GameManager.Resource.Instantiate(\\\"ZipLine\\\");\\r\\n       
+    zipLine.transform.position = this.zipPoints[0].position;\\r\\n        zipLine.transform.LookAt(this.zipPoints[1].position);\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.StopMoving();\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.enabled
+    = false;\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.SetParent(zipLine.transform);\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.localPosition
+    = new UnityEngine_1.Vector3(0.005, -1.329, 0.036);\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.localRotation
+    = UnityEngine_1.Quaternion.Euler(new UnityEngine_1.Vector3(0, 11.944, 0));\\r\\n       
+    this.isZipStart = true;\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetBool(\\\"isZipRide\\\",
+    true);\\r\\n        this.StartCoroutine(this.ZipLine_Move(zipLine, this.zipPoints,
+    this.zipSpeed));\\r\\n    }\\r\\n    *ZipLine_Move(zipLine, points, speed) {\\r\\n       
+    while (this.isZipStart) {\\r\\n            yield null;\\r\\n            this.isZipStart
+    = !zipLine.GetComponent($typeof(ZipLine_1.default)).Move(points, speed);\\r\\n       
+    }\\r\\n        GameManager.Resource.Destroy(zipLine);\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.enabled
+    = true;\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.SetParent(null);\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetBool(\\\"isZipRide\\\",
+    false);\\r\\n        this.StopCoroutine(this.ZipLine_Move(zipLine, points, speed));\\r\\n   
+    }\\r\\n    ////\\r\\n    SitProcess(obj) {\\r\\n        let benchObj = obj.transform.parent;\\r\\n       
+    benchObj.GetComponent($typeof(UnityEngine_1.BoxCollider)).enabled = false;\\r\\n       
+    benchObj.GetChild(1).gameObject.SetActive(false);\\r\\n        benchObj.GetChild(2).gameObject.SetActive(true);\\r\\n       
+    let sitPosition = benchObj.GetChild(0);\\r\\n        this.Teleport(sitPosition);\\r\\n       
+    this.StartCoroutine(this.SitMotionCheck(obj));\\r\\n    }\\r\\n    *SitMotionCheck(obj)
+    {\\r\\n        while (ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.GetBool(\\\"isSit\\\"))
+    {\\r\\n            yield null;\\r\\n        }\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetBool(\\\"isSit\\\",
+    true);\\r\\n    }\\r\\n    SitOut(tr) {\\r\\n        let benchObj = tr.parent;\\r\\n       
+    benchObj.GetComponent($typeof(UnityEngine_1.BoxCollider)).enabled = true;\\r\\n       
+    benchObj.GetChild(1).gameObject.SetActive(true);\\r\\n        benchObj.GetChild(2).gameObject.SetActive(false);\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetBool(\\\"isSit\\\",
+    false);\\r\\n    }\\r\\n    // public *PeedUploadComplete(){\\r\\n    //    
+    //let camera = this.transform.GetChild(5).GetChild(1).GetComponent<PhotozoneColl>().screenshotModule.activeSelf;\\r\\n   
+    //     if(this.isPeedUploadComplete){\\r\\n    //         this.NextQuest(\\\"11\\\");\\r\\n   
+    //     }\\r\\n    // }\\r\\n    //// \uAC8C\uC784 \uAC00\uB3D9 \uAE30\uD0C0 \uB85C\uC9C1\\r\\n   
+    CloseQuestPart(questNum) {\\r\\n        this.transform.GetChild(parseInt(questNum)
+    - 1).gameObject.SetActive(false);\\r\\n    }\\r\\n    /// \uC785\uAD6D\uC2EC\uC0AC\uB300
+    \uC9C0\uC5ED \uCC28\uB2E8\\r\\n    AreaClose(resetPoint, areaNum) {\\r\\n       
+    let isEntry;\\r\\n        let isTake;\\r\\n        let onPopUp;\\r\\n       
+    let offPopUp;\\r\\n        switch (areaNum) {\\r\\n            case 0:\\r\\n               
+    isEntry = this.isPassEntry;\\r\\n                isTake = this.isTakePassport
+    && this.isTakeDisembarkationCard;\\r\\n                onPopUp = \\\"3\\\";\\r\\n               
+    offPopUp = \\\"Popup_Upper-OffPassportEntry\\\";\\r\\n                break;\\r\\n           
+    case 4:\\r\\n                isEntry = (GameManager.player.quest == 6);\\r\\n               
+    isTake = (GameManager.player.quest == 6);\\r\\n                onPopUp = \\\"\\\";\\r\\n               
+    offPopUp = \\\"Popup_Upper-OffOxClear\\\";\\r\\n                break;\\r\\n       
+    }\\r\\n        if (!isEntry) {\\r\\n            if (isTake) {\\r\\n               
+    this.NextQuest(onPopUp);\\r\\n                this.EntryCheck(areaNum, resetPoint);\\r\\n               
+    this.DestroyHandObj();\\r\\n            }\\r\\n            else {\\r\\n               
+    this.Teleport(resetPoint);\\r\\n                GameManager.UI.Popup(offPopUp,
+    this.GetPopupTime);\\r\\n            }\\r\\n        }\\r\\n    }\\r\\n    EntryCheck(areaNum,
+    tr = null) {\\r\\n        switch (areaNum) {\\r\\n            case 0:\\r\\n               
+    this.isPassEntry = true;\\r\\n                GameManager.instance.CloseQuestPart(\\\"1\\\");\\r\\n               
+    break;\\r\\n            case 4:\\r\\n                // this.isCarrierEntry =
+    true;\\r\\n                // ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.StopMoving();\\r\\n               
+    break;\\r\\n        }\\r\\n    }\\r\\n    Teleport(transform) {\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.controllerData.inputAsset.Disable();\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.StopMoving();\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.Teleport(transform.position,
+    transform.rotation);\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.controllerData.inputAsset.Enable();\\r\\n   
+    }\\r\\n    HoldSomething(obj, position, rotation, itemNum = 0) {\\r\\n       
+    let handTs = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.GetChild(0).\\r\\n           
+    GetChild(1).GetChild(2).GetChild(0).GetChild(1).GetChild(3).GetChild(1).GetChild(1)\\r\\n           
+    .GetChild(0).GetChild(1).GetChild(0);\\r\\n        if (itemNum == 1) { // \uCE90\uB9AC\uC5B4
+    \uC885\uC18D \uC704\uCE58 \uBCC0\uACBD\\r\\n            handTs = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.transform.GetChild(0);\\r\\n       
+    }\\r\\n        let lochandObj = GameManager.Resource.Instantiate(obj, handTs);\\r\\n       
+    lochandObj.transform.localPosition = position;\\r\\n        lochandObj.transform.localRotation
+    = UnityEngine_1.Quaternion.Euler(rotation);\\r\\n        this.handObj.push(lochandObj);\\r\\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetInteger(\\\"HoldSometing\\\",
+    itemNum);\\r\\n    }\\r\\n    /// \uBAA8\uB4E0 \uC544\uC774\uD15C \uD0C8\uCC29
+    \uBC0F \uC560\uB2C8\uBA54\uC774\uC158 \uCD08\uAE30\uD654\\r\\n    DestroyHandObj()
+    {\\r\\n        this.handObj.forEach((obj) => {\\r\\n            GameManager.Resource.Destroy(obj);\\r\\n       
+    });\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character.ZepetoAnimator.SetInteger(\\\"HoldSometing\\\",
+    0);\\r\\n        //GameManager.Resource.Destroy(this.handObj);\\r\\n    }\\r\\n   
+    /// \uD018\uC2A4\uD2B8 \uC9C4\uD589\\r\\n    NextQuest(questNum) {\\r\\n       
+    if (questNum == \\\"\\\")\\r\\n            return;\\r\\n        if (GameManager.player.quest
+    >= parseInt(questNum))\\r\\n            return;\\r\\n        GameManager.Room.Send(\\\"QuestUpdate\\\",
+    parseInt(questNum));\\r\\n        GameManager.UI.Popup(\\\"Popup_Quest-\\\" +
+    questNum);\\r\\n    }\\r\\n    WearPortyMask(sessionId) {\\r\\n        let mask
+    = this.portyMaskMap.get(sessionId);\\r\\n        let maskOri = this.portyMaskOrignMap.get(sessionId);\\r\\n       
+    if (mask != null) { // \uB9C8\uC2A4\uD06C\uB97C \uD68D\uB4DD \uD55C\uACBD\uC6B0\\r\\n           
+    if (mask.activeSelf == true) { // \uC774\uBBF8 \uCC29\uC6A9\uD55C \uACBD\uC6B0\\r\\n               
+    return;\\r\\n            }\\r\\n            else {\\r\\n                mask.SetActive(true);\\r\\n               
+    if (this.room.SessionId == sessionId) {\\r\\n                    this.room.Send(\\\"PortyMask\\\",
+    true);\\r\\n                }\\r\\n                if (maskOri != null)\\r\\n                   
+    maskOri.SetActive(false);\\r\\n                return;\\r\\n            }\\r\\n       
+    }\\r\\n        // \uB9C8\uC2A4\uD06C \uD68D\uB4DD, \uAE30\uC874\uC5D0 \uC7A5\uCC29\uD55C
+    \uC548\uACBD, \uC120\uAE00\uB77C\uC2A4 \uBC97\uAE30\uAE30\\r\\n        const
+    zepetoPlayer = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.GetPlayer(sessionId);\\r\\n       
+    let maskTr;\\r\\n        let _maskTr = zepetoPlayer.character.transform.GetChild(0).\\r\\n           
+    GetChild(1).GetChild(2).GetChild(0).GetChild(1).GetChild(1).GetChild(0).GetComponentsInChildren($typeof(UnityEngine_1.Transform));\\r\\n       
+    // for(let i = 0; i < _maskTr.length; i++){\\r\\n        //     if(_maskTr[i].transform.gameObject.name.startsWith(\\\"GLASSES\\\")
+    || _maskTr[i].transform.gameObject.name.startsWith(\\\"SUNGLASSES\\\")){\\r\\n       
+    //         maskTr = _maskTr[i].transform;\\r\\n        //         this.portyMaskOrignMap.set(sessionId,
+    _maskTr[i].transform.gameObject);\\r\\n        //         _maskTr[i].transform.gameObject.SetActive(false);\\r\\n       
+    //     }\\r\\n        //     else{\\r\\n        maskTr = zepetoPlayer.character.transform.GetChild(0).\\r\\n           
+    GetChild(1).GetChild(2).GetChild(0).GetChild(1).GetChild(1).GetChild(0);\\r\\n       
+    //     }\\r\\n        // }\\r\\n        let __mask = GameManager.Resource.Instantiate(\\\"PortyMask\\\",
+    maskTr);\\r\\n        __mask.transform.localPosition = UnityEngine_1.Vector3.op_Addition(__mask.transform.localPosition,
+    new UnityEngine_1.Vector3(0, 0.1, 0.05));\\r\\n        this.portyMaskMap.set(sessionId,
+    __mask);\\r\\n        if (this.room.SessionId == sessionId) {\\r\\n           
+    this.room.Send(\\\"PortyMask\\\", true);\\r\\n        }\\r\\n    }\\r\\n    ////\\r\\n   
+    TurnOffObj(name, sessionId) {\\r\\n        if (name == \\\"PortyMask\\\") {\\r\\n           
+    let mask = this.portyMaskOrignMap.get(sessionId);\\r\\n            let curMask
+    = this.portyMaskMap.get(sessionId);\\r\\n            if (mask != null) {\\r\\n               
+    mask.gameObject.SetActive(true);\\r\\n            }\\r\\n            curMask.SetActive(false);\\r\\n           
+    if (sessionId == this.room.SessionId)\\r\\n                this.room.Send(\\\"PortyMask\\\",
+    false);\\r\\n        }\\r\\n    }\\r\\n    LeavePlayer(sessionId) {\\r\\n       
+    this.portyMaskMap.delete(sessionId);\\r\\n        this.portyMaskOrignMap.delete(sessionId);\\r\\n   
+    }\\r\\n    SendRoomMessage(type, message) {\\r\\n        GameManager.Room.Send(type,
+    message);\\r\\n    }\\r\\n}\\r\\nexports.default = GameManager;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHYW1lTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUE2RTtBQUM3RSwrQ0FBaUQ7QUFHakQsNkVBQXVJO0FBQ3ZJLDZDQUF5SjtBQUN6Six5REFBa0Q7QUFDbEQsNkNBQXNDO0FBQ3RDLHVDQUFnQztBQUNoQyxxQ0FBOEI7QUFDOUIsbURBQTRDO0FBRTVDLE1BQXFCLFdBQVksU0FBUSxxQ0FBcUI7SUFBOUQ7O1FBTUksZUFBVSxHQUFvQixJQUFJLDBCQUFnQixFQUFFLENBQUM7UUFHckQsU0FBSSxHQUFjLElBQUksb0JBQVUsRUFBRSxDQUFDO1FBTTNCLGVBQVUsR0FBVSxDQUFDLENBQUM7UUFLOUIsSUFBSTtRQUVHLGlCQUFZLEdBQTJCLElBQUksR0FBRyxFQUFzQixDQUFDLENBQUMsY0FBYztRQUNwRixzQkFBaUIsR0FBMkIsSUFBSSxHQUFHLEVBQXNCLENBQUMsQ0FBQyxnQkFBZ0I7UUFFM0Ysa0JBQWEsR0FBVyxLQUFLLENBQUM7UUE0RHJDLElBQUk7UUFHSixXQUFXO1FBQ0gsZ0JBQVcsR0FBMkIsSUFBSSxHQUFHLEVBQXNCLENBQUM7UUFDcEUsMEJBQXFCLEdBQTJCLElBQUksR0FBRyxFQUFzQixDQUFDO1FBRTlFLGdCQUFXLEdBQVcsS0FBSyxDQUFDO1FBQzVCLG1CQUFjLEdBQVcsS0FBSyxDQUFDO1FBQy9CLDZCQUF3QixHQUFXLEtBQUssQ0FBQztRQXlCakQsSUFBSTtRQUVKLFdBQVc7UUFDSCxtQkFBYyxHQUFXLEtBQUssQ0FBQztRQUMvQixrQkFBYSxHQUFXLEtBQUssQ0FBQztRQXFDOUIsWUFBTyxHQUFXLEtBQUssQ0FBQztRQWNoQyxJQUFJO1FBRUosV0FBVztRQUNILDBCQUFxQixHQUFhLEtBQUssQ0FBQztRQUN4QyxvQkFBZSxHQUFhLEtBQUssQ0FBQztRQXFMMUMseUVBQXlFO1FBQ3pFLGtFQUFrRTtRQUNsRSw4RUFBOEU7UUFD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\",\"assetPath\":\"Assets/ZepetoScripts/GameManager.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"\",\"name\":\"___resource\",\"type\":\"D:/Zepeto/ChungjuAir/Assets/ZepetoScripts/ResourcesManager.default\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"\",\"name\":\"___ui\",\"type\":\"D:/Zepeto/ChungjuAir/Assets/ZepetoScripts/UIManagers.default\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"\",\"name\":\"room\",\"type\":\"ZEPETO.Multiplay.Room\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"ZEPETO.World\",\"name\":\"multiplay\",\"type\":\"ZEPETO.World.ZepetoWorldMultiplay\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"isInPhotozone\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"photozone\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"onTarget\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"isPeedUploadComplete\",\"type\":\"System.Boolean\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"granma\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"GameManager\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 149ba7055df68eddffb550fe84a566f9
+  onlyWriteTrigger: 0

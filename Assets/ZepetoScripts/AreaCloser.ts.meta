@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: b63ed01f823ed2d409acbee562bd01ac
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    GameManager_1 = require(\\\"./GameManager\\\");\\r\\nclass AreaCloser extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start() {\\r\\n        this.resetPoint
+    = this.transform.GetChild(0).transform;\\r\\n    }\\r\\n    OnTriggerEnter(col)
+    {\\r\\n        if (col.gameObject.tag == \\\"Player\\\") { // \uC6D0\uB798 \uC704\uCE58\uB85C
+    \uB9C9\uB294 \uC6A9\uB3C4\uB85C \uC0AC\uC6A9\uB420 \uC608\uC815\\r\\n           
+    GameManager_1.default.instance.AreaClose(this.resetPoint, this.areaNum);\\r\\n       
+    }\\r\\n    }\\r\\n}\\r\\nexports.default = AreaCloser;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXJlYUNsb3Nlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFyZWFDbG9zZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsK0NBQXdDO0FBRXhDLE1BQXFCLFVBQVcsU0FBUSxxQ0FBcUI7SUFHekQsS0FBSztRQUNELElBQUksQ0FBQyxVQUFVLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDO0lBQzNELENBQUM7SUFDRCxjQUFjLENBQUMsR0FBYztRQUN6QixJQUFHLEdBQUcsQ0FBQyxVQUFVLENBQUMsR0FBRyxJQUFJLFFBQVEsRUFBQyxFQUFFLHVCQUF1QjtZQUN2RCxxQkFBVyxDQUFDLFFBQVEsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBRSxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7U0FDakU7SUFDTCxDQUFDO0NBRUo7QUFaRCw2QkFZQyJ9\",\"assetPath\":\"Assets/ZepetoScripts/preset/AreaCloser.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"mscorlib\",\"name\":\"areaNum\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"AreaCloser\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 7996999a7c0dcf3ada0b25c88987b7a0

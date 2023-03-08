@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: fddae1d4855f1c04ea2135087b2bceb1
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    BtnOnOffTrigger extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        // console.log(this.transform.name);\r\n        for (let i = 0;
+    i < this.btnList.length; i++) {\r\n            this.btnList[i].SetActive(false);\r\n       
+    }\r\n    }\r\n    OnTriggerEnter(col) {\r\n        if (col.transform.tag == \"Player\")
+    { //console.log(\"in\" + col.transform.name);\r\n            for (let i = 0;
+    i < this.btnList.length; i++) {\r\n                if ($extension(\"ZEPETO.Script.GameObjectExtension\").IsDestroyed(this.btnList[i]))\r\n                   
+    this.btnList.splice(i, 1);\r\n                else\r\n                    this.btnList[i].SetActive(true);\r\n           
+    }\r\n        }\r\n    }\r\n    OnTriggerExit(col) {\r\n        if (col.transform.tag
+    == \"Player\") {\r\n            for (let i = 0; i < this.btnList.length; i++)
+    {\r\n                if ($extension(\"ZEPETO.Script.GameObjectExtension\").IsDestroyed(this.btnList[i]))\r\n                   
+    this.btnList.splice(i, 1);\r\n                else\r\n                    this.btnList[i].SetActive(false);\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = BtnOnOffTrigger;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnRuT25PZmZUcmlnZ2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQnRuT25PZmZUcmlnZ2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBRXJELE1BQXFCLGVBQWdCLFNBQVEscUNBQXFCO0lBRzlELEtBQUs7UUFDRCxvQ0FBb0M7UUFDcEMsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsRUFBRSxFQUFDO1lBQ3hDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO1NBQ3BDO0lBQ0wsQ0FBQztJQUVELGNBQWMsQ0FBQyxHQUFZO1FBQ3ZCLElBQUksR0FBRyxDQUFDLFNBQVMsQ0FBQyxHQUFHLElBQUksUUFBUSxFQUFDLEVBQUUseUNBQXlDO1lBQ3pFLEtBQUksSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBRSxDQUFDLEVBQUUsRUFBQztnQkFDeEMsb0RBQW9CLFdBQVcsQ0FBM0IsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7b0JBQWdCLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUMsRUFBQyxDQUFDLENBQUMsQ0FBQzs7b0JBQ3ZELElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO2FBRXhDO1NBQ0o7SUFDTCxDQUFDO0lBRUQsYUFBYSxDQUFDLEdBQVk7UUFDdEIsSUFBSSxHQUFHLENBQUMsU0FBUyxDQUFDLEdBQUcsSUFBSSxRQUFRLEVBQUM7WUFDOUIsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxFQUFFLENBQUMsRUFBRSxFQUFDO2dCQUN4QyxvREFBb0IsV0FBVyxDQUEzQixJQUFJLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQztvQkFBZ0IsSUFBSSxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQyxFQUFDLENBQUMsQ0FBQyxDQUFDOztvQkFDdkQsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7YUFDekM7U0FDSjtJQUNMLENBQUM7Q0FDSjtBQTVCRCxrQ0E0QkMifQ==","assetPath":"Assets/ZepetoScripts/BtnOnOffTrigger.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"btnList","type":"UnityEngine.GameObject[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"BtnOnOffTrigger","description":""},"isCompiled":true}'
+  typescriptHash: fb089736cd44ad5a846f69ff51c83ef2
+  onlyWriteTrigger: 0

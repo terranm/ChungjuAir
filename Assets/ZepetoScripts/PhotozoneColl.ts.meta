@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 1b3f581a058e697479d23ccd0f3e9fac
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst GameManager_1 =
+    require(\\\"./GameManager\\\");\\r\\nclass PhotozoneColl extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\\r\\n    // public screenshotModule : GameObject;\\r\\n    // Start(){\\r\\n   
+    //     this.screenshotModule = GameObject.Find(\\\"ZepetoScreenShotModule\\\");\\r\\n   
+    //     this.screenshotModule.SetActive(false);\\r\\n    // }\\r\\n    OnTriggerEnter(coll)
+    {\\r\\n        if (coll.gameObject.tag === \\\"Player\\\") {\\r\\n           
+    if (!GameManager_1.default.instance.isInPhotozone) {\\r\\n                GameManager_1.default.instance.isInPhotozone
+    = true;\\r\\n                // this.screenshotModule.SetActive(true);\\r\\n               
+    GameManager_1.default.UI.Popup(\\\"Popup_Upper-CameraOn\\\", GameManager_1.default.instance.GetPopupTime);\\r\\n               
+    // // \uC720\uB2C8\uD2F0 \uB0B4\uBD80 \uD14C\uC2A4\uD2B8\uC6A9 \uB7F0\uCE6D\uC2DC
+    \uC0AD\uC81C \uD544\uC694\\r\\n                // GameManager.instance.NextQuest(\\\"11\\\");\\r\\n               
+    // GameManager.instance.CloseQuestPart(\\\"6\\\");\\r\\n            }\\r\\n       
+    }\\r\\n    }\\r\\n}\\r\\nexports.default = PhotozoneColl;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGhvdG96b25lQ29sbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBob3Rvem9uZUNvbGwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUQ7QUFDbkQsaURBQXFEO0FBQ3JELCtDQUF3QztBQUV4QyxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBQzVELHdDQUF3QztJQUN4QyxXQUFXO0lBQ1gseUVBQXlFO0lBQ3pFLDhDQUE4QztJQUM5QyxJQUFJO0lBQ0osY0FBYyxDQUFDLElBQWU7UUFDMUIsSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsS0FBSyxRQUFRLEVBQUM7WUFDaEMsSUFBRyxDQUFDLHFCQUFXLENBQUMsUUFBUSxDQUFDLGFBQWEsRUFBQztnQkFDbkMscUJBQVcsQ0FBQyxRQUFRLENBQUMsYUFBYSxHQUFHLElBQUksQ0FBQztnQkFDMUMseUNBQXlDO2dCQUN6QyxxQkFBVyxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMsc0JBQXNCLEVBQUUscUJBQVcsQ0FBQyxRQUFRLENBQUMsWUFBWSxDQUFDLENBQUM7Z0JBRWhGLDJCQUEyQjtnQkFDM0Isd0NBQXdDO2dCQUN4Qyw0Q0FBNEM7YUFDL0M7U0FDSjtJQUNMLENBQUM7Q0FDSjtBQW5CRCxnQ0FtQkMifQ==\",\"assetPath\":\"Assets/ZepetoScripts/PhotozoneColl.ts\",\"manifest\":{\"properties\":[],\"name\":\"PhotozoneColl\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 9d635d7b87fc6df35445a57421649a5a
+  onlyWriteTrigger: 0

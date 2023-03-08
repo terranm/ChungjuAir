@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -590562033, guid: 921f0445823004a16a499d629dd566a6, type: 3}
+  m_Name: ScriptableObject_NPC
+  m_EditorClassIdentifier: 
+  keys:
+  - anim
+  - avatar
+  unityValues:
+  - {fileID: 9100000, guid: d293516a610e23845b302f66dcb7014e, type: 2}
+  - {fileID: 6299116635404463689, guid: c765244079a46ee4d8e507e732c23fe6, type: 3}
+  values:
+  - 
+  - 
+  unityArrayValues: []
+  arrayValues: []
+  script: {fileID: 4458252877524076426, guid: f51dde68ca2b0984b80f1bc9f6efbb76, type: 3}

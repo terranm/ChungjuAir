@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: f1ef7937185a6174c83f40ec4188f702
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst GameManager_1 = require(\"./GameManager\");\r\nclass
+    LakeDelay extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    switch (this.loadingImgNum) {\r\n            case 0:\r\n                this.loadingUITr
+    = GameManager_1.default.UI.loadingUI;\r\n                break;\r\n           
+    case 1:\r\n                this.loadingUITr = GameManager_1.default.UI.loadingUI_lake;\r\n               
+    break;\r\n        }\r\n    }\r\n    OnTriggerEnter(coll) {\r\n        if (coll.gameObject.tag
+    === \"Player\") {\r\n            this.StartCoroutine(this.Loading());\r\n       
+    }\r\n    }\r\n    *Loading() {\r\n        this.loadingUITr.gameObject.SetActive(true);\r\n       
+    yield new UnityEngine_1.WaitForSeconds(2);\r\n        this.loadingUITr.gameObject.SetActive(false);\r\n   
+    }\r\n}\r\nexports.default = LakeDelay;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnREZWxheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlbGVwb3J0RGVsYXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBa0U7QUFDbEUsaURBQXFEO0FBQ3JELCtDQUF3QztBQUV4QyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBS3hELEtBQUs7UUFDRCxRQUFPLElBQUksQ0FBQyxhQUFhLEVBQUM7WUFDdEIsS0FBSyxDQUFDO2dCQUNGLElBQUksQ0FBQyxXQUFXLEdBQUcscUJBQVcsQ0FBQyxFQUFFLENBQUMsU0FBUyxDQUFBO2dCQUMzQyxNQUFNO1lBQ1YsS0FBSyxDQUFDO2dCQUNGLElBQUksQ0FBQyxXQUFXLEdBQUcscUJBQVcsQ0FBQyxFQUFFLENBQUMsY0FBYyxDQUFBO2dCQUNoRCxNQUFNO1NBQ2I7SUFDTCxDQUFDO0lBRUQsY0FBYyxDQUFDLElBQWE7UUFDeEIsSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsS0FBSyxRQUFRLEVBQUM7WUFDaEMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsT0FBTyxFQUFFLENBQUMsQ0FBQztTQUN2QztJQUNMLENBQUM7SUFFRCxDQUFDLE9BQU87UUFDSixJQUFJLENBQUMsV0FBVyxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDNUMsTUFBTSxJQUFJLDRCQUFjLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDNUIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ2pELENBQUM7Q0FDSjtBQTNCRCw0QkEyQkMifQ==","assetPath":"Assets/ZepetoScripts/TeleportDelay.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"loadingImgNum","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"LakeDelay","description":""},"isCompiled":true}'
+  typescriptHash: f255eb92f5614552f3ff4792fa5c2094
+  onlyWriteTrigger: 0

@@ -1,0 +1,51 @@
+fileFormatVersion: 2
+guid: 2138a0c1bcd4ec148bbc63bdd995259b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass PlaneMove extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.targetNum = 0;\r\n        this.speedAdd =
+    20;\r\n        this.speed = this.speedAdd;\r\n        this.targets = this.transform.parent.gameObject;\r\n       
+    this.moveTargetList = this.targets.GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n       
+    let temp = this.moveTargetList.shift();\r\n        console.log(temp.name);\r\n       
+    temp = this.moveTargetList.shift();\r\n        console.log(temp.name);\r\n   
+    }\r\n    Update() {\r\n        this.gameObject.transform.position = UnityEngine_1.Vector3.MoveTowards(this.gameObject.transform.position,
+    this.moveTargetList[this.targetNum].position, this.speed * UnityEngine_1.Time.deltaTime);\r\n       
+    let dist = (UnityEngine_1.Vector3.op_Subtraction(this.gameObject.transform.position,
+    this.moveTargetList[this.targetNum].position)).magnitude;\r\n        if (dist
+    < 0.5) {\r\n            this.gameObject.transform.position = this.moveTargetList[this.targetNum].position;\r\n           
+    this.targetNum++;\r\n            if (this.targetNum == this.moveTargetList.length)
+    {\r\n                this.targetNum = 0;\r\n                this.speed = this.speedAdd;\r\n           
+    }\r\n            this.gameObject.transform.LookAt(this.moveTargetList[this.targetNum].position);\r\n           
+    this.gameObject.transform.Rotate(new UnityEngine_1.Vector3(90, -90, -105));\r\n           
+    if (this.moveTargetList.length < 5)\r\n                return;\r\n           
+    if (this.targetNum > 5) {\r\n                this.speed -= this.speedAdd;\r\n           
+    }\r\n            else {\r\n                this.speed += this.speedAdd;\r\n           
+    }\r\n        }\r\n        // if(this.gameObject.transform.position == this.moveTargetList[this.targetNum].position){\r\n       
+    //     this.targetNum++;\r\n        //     if(this.targetNum == 9) {\r\n       
+    //         this.targetNum = 0;\r\n        //         this.speed = this.speedAdd;\r\n       
+    //     }\r\n        //     this.gameObject.transform.LookAt(this.moveTargetList[this.targetNum].position);\r\n       
+    //     this.gameObject.transform.Rotate(new Vector3(90,-90,-105));\r\n       
+    //     if(this.targetNum > 5){\r\n        //         this.speed-=this.speedAdd;\r\n       
+    //     }\r\n        //     else {\r\n        //         this.speed+=this.speedAdd;\r\n       
+    //     }\r\n        // }\r\n    }\r\n}\r\nexports.default = PlaneMove;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxhbmVNb3ZlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUGxhbmVNb3ZlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTRFO0FBQzVFLGlEQUFxRDtBQUVyRCxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBUXhELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQztRQUNuQixJQUFJLENBQUMsUUFBUSxHQUFHLEVBQUUsQ0FBQztRQUNuQixJQUFJLENBQUMsS0FBSyxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUM7UUFDM0IsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxVQUFVLENBQUM7UUFDaEQsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLHVCQUF1QixTQUFDLHVCQUFTLEVBQUcsQ0FBQztRQUN4RSxJQUFJLElBQUksR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3ZDLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQ3ZCLElBQUksR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ25DLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzNCLENBQUM7SUFDRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLEtBQUssR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3hLLElBQUksSUFBSSxHQUFHLENBeEI2QixxQkFBTyxDQThEazRtQixjQUFlLENBdENwN21CLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRyxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxRQUFRLEVBQUMsQ0FBQyxTQUFTLENBQUE7UUFDeEcsSUFBSSxJQUFJLEdBQUcsR0FBRyxFQUFDO1lBQ1gsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDLFFBQVEsQ0FBQztZQUNsRixJQUFJLENBQUMsU0FBUyxFQUFFLENBQUM7WUFDakIsSUFBSSxJQUFJLENBQUMsU0FBUyxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsTUFBTSxFQUFDO2dCQUM3QyxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQztnQkFDbkIsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDO2FBQzlCO1lBRUQsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1lBQy9FLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxJQUFJLHFCQUFPLENBQUMsRUFBRSxFQUFDLENBQUMsRUFBRSxFQUFDLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztZQUMzRCxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsTUFBTSxHQUFHLENBQUM7Z0JBQUUsT0FBTztZQUUzQyxJQUFHLElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxFQUFDO2dCQUNsQixJQUFJLENBQUMsS0FBSyxJQUFFLElBQUksQ0FBQyxRQUFRLENBQUM7YUFDN0I7aUJBQ0k7Z0JBQ0QsSUFBSSxDQUFDLEtBQUssSUFBRSxJQUFJLENBQUMsUUFBUSxDQUFDO2FBQzdCO1NBQ0o7UUFFRCwwRkFBMEY7UUFDMUYsd0JBQXdCO1FBQ3hCLGdDQUFnQztRQUNoQyw4QkFBOEI7UUFDOUIsc0NBQXNDO1FBQ3RDLFFBQVE7UUFFUixzRkFBc0Y7UUFDdEYsa0VBQWtFO1FBQ2xFLDhCQUE4QjtRQUM5QixxQ0FBcUM7UUFDckMsUUFBUTtRQUNSLGFBQWE7UUFDYixxQ0FBcUM7UUFDckMsUUFBUTtRQUNSLElBQUk7SUFDUixDQUFDO0NBQ0o7QUEzREQsNEJBMkRDIn0=","assetPath":"Assets/ZepetoScripts/PlaneMove.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"targets","type":"UnityEngine.GameObject","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"targetNum","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"PlaneMove","description":""},"isCompiled":true}'
+  typescriptHash: 0813b0837213cb114e4480ae21559702
+  onlyWriteTrigger: 0

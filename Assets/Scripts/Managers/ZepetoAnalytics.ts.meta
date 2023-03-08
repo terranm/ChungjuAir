@@ -1,0 +1,58 @@
+fileFormatVersion: 2
+guid: e46aab335ca1eb34eb02e46e3635bdde
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Analytics_1 = require(\\\"ZEPETO.Analytics\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst UnityEngine = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Character_Controller_1 = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nconst
+    ZEPETO_World_1 = require(\\\"ZEPETO.World\\\");\\r\\nconst ClientStarter_1 =
+    require(\\\"../../ZepetoScripts/ClientStarter\\\");\\r\\nclass ZepetoAnalytics
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start() {\\r\\n       
+    this.analytics = this.gameObject.GetComponent($typeof(ZEPETO_Analytics_1.ZepetoAnalyticsComponent));\\r\\n       
+    // \uBAA8\uB4C8\uD654 \uC791\uC5C5\\r\\n        this.clientStarter = UnityEngine.GameObject.Find(\\\"ClientStarter\\\").GetComponent($typeof(ClientStarter_1.default));\\r\\n       
+    this.clientStarter.Room != null;\\r\\n        this.GoogleAnalytics_SendLogEvent();\\r\\n   
+    }\\r\\n    GoogleAnalytics_SendLogEvent() {\\r\\n        this.StartCoroutine(this.Coroutine_GoogleAnalytics_SendLogEvent());\\r\\n   
+    }\\r\\n    *Coroutine_GoogleAnalytics_SendLogEvent() {\\r\\n        while (true)
+    {\\r\\n            yield new UnityEngine.WaitForSeconds(0.01);\\r\\n           
+    if (this.clientStarter.Room != null && this.clientStarter.Room.IsConnected) {\\r\\n               
+    const hasPlayer = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.HasPlayer(this.clientStarter.Room.SessionId);
+    // Send Player Transform\\r\\n                if (hasPlayer) {\\r\\n                   
+    break;\\r\\n                }\\r\\n            }\\r\\n        }\\r\\n       
+    let tempUserIds = new Array();\\r\\n        tempUserIds.push(ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.userId);\\r\\n       
+    let zepetoId = \\\"\\\";\\r\\n        ZEPETO_World_1.ZepetoWorldHelper.GetUserIdInfo(tempUserIds,
+    (info) => {\\r\\n            zepetoId = info[0].zepetoId;\\r\\n            console.log(zepetoId
+    + \\\" : \\\" + info[0].zepetoId);\\r\\n        }, (err) => {\\r\\n           
+    console.error(err);\\r\\n        });\\r\\n        // \uC720\uC800 \uC544\uC774\uB514\uB97C
+    \uBC1B\uC544\uC640\uC11C \uC774\uBCA4\uD2B8 \uD0A4\uB85C \uC124\uC815\uD558\uC5EC
+    \uC804\uC1A1\uD574\uC57C\uD568\\r\\n        while (true) {\\r\\n            yield
+    new UnityEngine.WaitForFixedUpdate();\\r\\n            if (zepetoId == \\\"\\\")\\r\\n               
+    continue;\\r\\n            zepetoId = zepetoId.replace(/\\\\./g, \\\"\uC810\\\");
+    // '.' \uC774 \uB4E4\uC5B4\uAC04 \uD0A4\uB294 \uAD6C\uAE00 \uC560\uB110\uB9AC\uD2F1\uC2A4
+    \uC0C1\uC5D0\uC11C \uBC1B\uC544\uC624\uC9C0 \uBABB\uD558\uB294 \uC624\uB958\uAC00
+    \uBC1C\uC0DD\uD558\uC5EC '\uC810' \uC73C\uB85C \uC784\uC2DC \uB300\uCCB4\\r\\n           
+    const time = new Date().toString();\\r\\n            const google = this.analytics.Analytics(ZEPETO_Analytics_1.AnalyticsType.GoogleAnalytics);\\r\\n           
+    google.SetUserId(tempUserIds[0]);\\r\\n            const eventParams = {\\r\\n               
+    AccessTime: time,\\r\\n            };\\r\\n            google.LogEvent(zepetoId,
+    eventParams);\\r\\n            console.log(`google.LogEvent<CustomEvent>(${zepetoId},
+    ${eventParams.AccessTime})`);\\r\\n            break;\\r\\n        }\\r\\n       
+    this.StopCoroutine(this.Coroutine_GoogleAnalytics_SendLogEvent());\\r\\n    }\\r\\n}\\r\\nexports.default
+    = ZepetoAnalytics;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWmVwZXRvQW5hbHl0aWNzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiWmVwZXRvQW5hbHl0aWNzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsdURBQTJFO0FBQzNFLGlEQUFxRDtBQUNyRCwyQ0FBMEM7QUFDMUMsNkVBQTREO0FBQzVELCtDQUF3RDtBQUV4RCxxRUFBOEQ7QUFFOUQsTUFBcUIsZUFBZ0IsU0FBUSxxQ0FBcUI7SUFPOUQsS0FBSztRQUNELElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxZQUFZLFNBQUMsMkNBQXdCLEVBQUcsQ0FBQztRQUMxRSxTQUFTO1FBQ1QsSUFBSSxDQUFDLGFBQWEsR0FBRyxXQUFXLENBQUMsVUFBVSxDQUFDLElBQUksQ0FBQyxlQUFlLENBQUMsQ0FBQyxZQUFZLFNBQUMsdUJBQWEsRUFBRyxDQUFDO1FBQ2hHLElBQUksQ0FBQyxhQUFhLENBQUMsSUFBSSxJQUFJLElBQUksQ0FBQTtRQUMvQixJQUFJLENBQUMsNEJBQTRCLEVBQUUsQ0FBQztJQUN4QyxDQUFDO0lBRU0sNEJBQTRCO1FBQy9CLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLHNDQUFzQyxFQUFFLENBQUMsQ0FBQztJQUN2RSxDQUFDO0lBRUQsQ0FBQyxzQ0FBc0M7UUFDbkMsT0FBTSxJQUFJLEVBQUM7WUFDUCxNQUFNLElBQUksV0FBVyxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUMzQyxJQUFJLElBQUksQ0FBQyxhQUFhLENBQUMsSUFBSSxJQUFJLElBQUksSUFBSSxJQUFJLENBQUMsYUFBYSxDQUFDLElBQUksQ0FBQyxXQUFXLEVBQUU7Z0JBQ3hFLE1BQU0sU0FBUyxHQUFHLDJDQUFhLENBQUMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsYUFBYSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUE0Qix3QkFBd0I7Z0JBQzFJLElBQUksU0FBUyxFQUFFO29CQUNYLE1BQU07aUJBQ1Q7YUFDSjtTQUNKO1FBRUQsSUFBSSxXQUFXLEdBQUcsSUFBSSxLQUFLLEVBQUUsQ0FBQztRQUM5QixXQUFXLENBQUMsSUFBSSxDQUFDLDJDQUFhLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQyxZQUFZLENBQUMsTUFBTSxDQUFDLENBQUM7UUFDekUsSUFBSSxRQUFRLEdBQUcsRUFBRSxDQUFDO1FBQ2xCLGdDQUFpQixDQUFDLGFBQWEsQ0FBQyxXQUFXLEVBQUMsQ0FBQyxJQUFZLEVBQUMsRUFBRTtZQUN4RCxRQUFRLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQztZQUM1QixPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsR0FBRyxLQUFLLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3JELENBQUMsRUFBQyxDQUFDLEdBQUcsRUFBQyxFQUFFO1lBQ0wsT0FBTyxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUN2QixDQUFDLENBQUMsQ0FBQztRQUVILGlDQUFpQztRQUNqQyxPQUFNLElBQUksRUFBQztZQUNQLE1BQU0sSUFBSSxXQUFXLENBQUMsa0JBQWtCLEVBQUUsQ0FBQztZQUMzQyxJQUFJLFFBQVEsSUFBSSxFQUFFO2dCQUFFLFNBQVM7WUFDN0IsUUFBUSxHQUFHLFFBQVEsQ0FBQyxPQUFPLENBQUMsS0FBSyxFQUFFLEdBQUcsQ0FBQyxDQUFDLENBQUMsMkRBQTJEO1lBRXBHLE1BQU0sSUFBSSxHQUFHLElBQUksSUFBSSxFQUFFLENBQUMsUUFBUSxFQUFFLENBQUM7WUFDbkMsTUFBTSxNQUFNLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQUMsZ0NBQWEsQ0FBQyxlQUFlLENBQUMsQ0FBQztZQUV2RSxNQUFNLENBQUMsU0FBUyxDQUFDLFdBQVcsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBTWpDLE1BQU0sV0FBVyxHQUFlO2dCQUM1QixVQUFVLEVBQUcsSUFBSTthQUNwQixDQUFDO1lBRUYsTUFBTSxDQUFDLFFBQVEsQ0FBYyxRQUFRLEVBQUUsV0FBVyxDQUFDLENBQUM7WUFDcEQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxnQ0FBZ0MsUUFBUSxLQUFLLFdBQVcsQ0FBQyxVQUFVLEdBQUcsQ0FBQyxDQUFDO1lBQ3BGLE1BQU07U0FDVDtRQUNELElBQUksQ0FBQyxhQUFhLENBQUMsSUFBSSxDQUFDLHNDQUFzQyxFQUFFLENBQUMsQ0FBQztJQUN0RSxDQUFDO0NBQ0o7QUFqRUQsa0NBaUVDIn0=\",\"assetPath\":\"Assets/Scripts/Managers/ZepetoAnalytics.ts\",\"manifest\":{\"properties\":[],\"name\":\"ZepetoAnalytics\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 501ce0ecd1fda99733379b7363b03ce4
+  onlyWriteTrigger: 0

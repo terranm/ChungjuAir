@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 94a5c5f5c6f169c4ca6f8429a22a7378
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst __UnityEngine__ = require(\"UnityEngine\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst ZEPETO_Character_Controller_1
+    = require(\"ZEPETO.Character.Controller\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass ButtonLookat extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.multiPlay = UnityEngine_1.GameObject.Find(\"WorldMultiplay\").GetComponent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay));\r\n       
+    this.turnSpeen = 10;\r\n    }\r\n    Update() {\r\n        if (this.multiPlay.Room
+    != null && this.multiPlay.Room.IsConnected) {\r\n            if (ZEPETO_Character_Controller_1.ZepetoPlayers.instance.HasPlayer(this.multiPlay.Room.SessionId))
+    {\r\n                let dir = (__UnityEngine__.Vector3.op_Subtraction(ZEPETO_Character_Controller_1.ZepetoPlayers.instance.ZepetoCamera.camera.transform.position,
+    this.transform.position)).normalized;\r\n                let lookRot = UnityEngine_1.Quaternion.LookRotation(dir);\r\n               
+    lookRot.x = 0;\r\n                lookRot.z = 0;\r\n                this.transform.rotation
+    = UnityEngine_1.Quaternion.Slerp(this.transform.rotation, lookRot, this.turnSpeen
+    * UnityEngine_1.Time.deltaTime);\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = ButtonLookat;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dG9uTG9vdGF0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQnV0dG9uTG9vdGF0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDZDQUEyRDtBQUMzRCw2RUFBNEQ7QUFDNUQsaURBQXFEO0FBQ3JELCtDQUFvRDtBQUdwRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBSTNELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLHdCQUFVLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDLENBQUMsWUFBWSxTQUFDLG1DQUFvQixFQUFHLENBQUM7UUFDeEYsSUFBSSxDQUFDLFNBQVMsR0FBRyxFQUFFLENBQUM7SUFDeEIsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLElBQUksQ0FBQyxTQUFTLENBQUMsSUFBSSxJQUFJLElBQUksSUFBSSxJQUFJLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxXQUFXLEVBQUM7WUFDL0QsSUFBSSwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLEVBQUM7Z0JBQ2hFLElBQUksR0FBRyxHQUFHLHlCQVM2c3BCLGNBQWUsQ0FUM3RwQiwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxZQUFZLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUMsQ0FBQyxVQUFVLENBQUM7Z0JBQy9HLElBQUksT0FBTyxHQUFHLHdCQUFVLENBQUMsWUFBWSxDQUFDLEdBQUcsQ0FBQyxDQUFDO2dCQUMzQyxPQUFPLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFDZCxPQUFPLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFFZCxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyx3QkFBVSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRSxPQUFPLEVBQUUsSUFBSSxDQUFDLFNBQVMsR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2FBQ2pIO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUFyQkQsK0JBcUJDIn0=","assetPath":"Assets/ZepetoScripts/preset/ButtonLootat.ts","manifest":{"properties":[{"assembly":"ZEPETO.World","name":"multiPlay","type":"ZEPETO.World.ZepetoWorldMultiplay","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"turnSpeen","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ButtonLookat","description":""},"isCompiled":true}'
+  typescriptHash: 7e8c1a2d034181ff734ac63b78b48908

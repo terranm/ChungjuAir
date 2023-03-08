@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: cca558cfcb918334ab743813cfa788d4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass BeltMove extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    OnTriggerStay(col) {\r\n        //console.log(\"col\" + col.gameObject.name);\r\n       
+    if (col.transform.tag == \"Carrier\") {\r\n            col.transform.position
+    = UnityEngine_1.Vector3.MoveTowards(col.transform.position, this.endPoint.position,
+    this.speed * UnityEngine_1.Time.deltaTime);\r\n        }\r\n    }\r\n}\r\nexports.default
+    = BeltMove;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQmVsdE1vdmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJCZWx0TW92ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFpRTtBQUNqRSxpREFBcUQ7QUFFckQsTUFBcUIsUUFBUyxTQUFRLHFDQUFxQjtJQUd2RCxhQUFhLENBQUMsR0FBYztRQUN4QiwyQ0FBMkM7UUFDM0MsSUFBSSxHQUFHLENBQUMsU0FBUyxDQUFDLEdBQUcsSUFBSSxTQUFTLEVBQUM7WUFDL0IsR0FBRyxDQUFDLFNBQVMsQ0FBQyxRQUFRLEdBQUcscUJBQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLFFBQVEsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLEtBQUssR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQyxDQUFDO1NBQzdIO0lBQ0wsQ0FBQztDQUVKO0FBVkQsMkJBVUMifQ==","assetPath":"Assets/ZepetoScripts/preset/BeltMove.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"endPoint","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"BeltMove","description":""},"isCompiled":true}'
+  typescriptHash: 76a970d8dd203e60739d9301465ce9a9

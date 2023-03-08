@@ -1,0 +1,729 @@
+[World Settings]
+world id             com.cheongjuair.cheongju
+version              0.1                 
+max clients          8                   
+orientation          horizontal          
+disable invite       false               
+disable room list    false               
+disable private room false               
+
+[Build Manifest]
+[scenes]
+13 mb                assets/scenes/chungju_airport.unity
+[assets]
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame159.png
+2 kb                 assets/res/material/fx_round01_add.mat
+2 kb                 assets/res/env/give_dream/material/ship.mat
+8 kb                 assets/res/env/give_dream/texture/sub_water.jpg
+297 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame140.png
+35 kb                packages/zepeto.character.controller/runtime/_resources/inputactions/zepetoinputcontrol.inputactions
+429 kb               assets/res/image/ui/퀘스트/퀘스트창3.png
+299 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame133.png
+246 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame50.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame253.png
+246 kb               assets/res/npc/woman_npc_2_seller_3.prefab
+293 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame150.png
+8 kb                 assets/res/env/chungju_airport/sub_water 1.jpg
+212 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame10.png
+280 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame195.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame346.png
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame188.png
+2 kb                 assets/res/env/give_dream/material/campingtex01.mat
+231 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame335.png
+510 kb               assets/res/env/give_dream/texture/tent_bottom.png
+279 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame192.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/walk.anim
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame241.png
+191 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame374.png
+247 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame315.png
+2 kb                 assets/res/old_/1f-2f_basecolor.mat
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame185.png
+15 mb                assets/chungju_airport/chungjo_river_total.fbx
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame47.png
+1 mb                 assets/res/old/_resources/[skybox]/dayskygradient.mat
+2 kb                 assets/res/env/give_dream/material/tent_bottom.mat
+2 kb                 assets/res/env/give_dream/material/odu_item.mat
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame286.png
+1 mb                 assets/res/old/toms3/lightmap-1_comp_light.exr
+27 kb                packages/zepeto.character.controller/runtime/_resources/prefabs/uicontroller_touchpad_horizontal.prefab
+801 kb               assets/res/env/give_dream/texture/pc_singing_setting_none_basecolor.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame249.png
+150 kb               assets/res/image/ui/ox퀴즈/q5.png
+546 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingroll.anim
+2 kb                 assets/res/old/toms/car/chairt.mat
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame364.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame314.png
+2 mb                 assets/chungju_airport/texture/mt.png
+36 kb                assets/res/fbx/npc/woman/eyelashes_mask_512.png
+27 kb                packages/zepeto.character.controller/runtime/_resources/prefabs/uicontroller_touchpad_vertical.prefab
+239 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame337.png
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame49.png
+254 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame306.png
+1 kb                 packages/com.unity.inputsystem/inputsystem/editor/icons/inputsystemuiinputmodule@64.png
+2 kb                 assets/res/as_magic_aura_construction_kit_free/demo scene/materials/aura_1/spiral.mat
+3 kb                 assets/res/image/ui/popup/click 1.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame362.png
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame18.png
+226 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame57.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame282.png
+2 kb                 assets/res/env/chungju_airport/water.mat
+34 kb                assets/res/image/ui/버튼 모음/받기 버튼.png
+231 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame124.png
+199 kb               assets/res/image/ui/ox퀴즈/q1.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame250.png
+267 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame174.png
+2 kb                 assets/res/material/materials/carrier 3.mat
+3 mb                 assets/res/env/give_dream/texture/land_none_basecolor.png
+259 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame289.png
+254 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame218.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/gesture.anim
+3 mb                 assets/res/old/toms3/lightmap-5_comp_light.exr
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame206.png
+255 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame271.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame41.png
+47 mb                assets/res/fbx/청주공항_ver1006.fbx
+1 mb                 assets/res/env/give_dream/texture/all_rocket_defaultmaterial_basecolor.png
+209 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame37.png
+2 kb                 assets/res/old/toms/car/car_logo.mat
+2 kb                 assets/res/env/give_dream/material/fly_atlas.mat
+827 kb               assets/res/old/toms3/lightmap-7_comp_light.exr
+59 kb                assets/res/env/give_dream/texture/tams_logo_256.png
+256 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame161.png
+198 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame350.png
+300 kb               assets/models/zepetoanimatorv2.controller
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame355.png
+24 kb                assets/res/old/teleport/circle1.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame43.png
+193 kb               assets/chungju_airport/texture/land_to_bridge_nan_basecolor.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame217.png
+11 kb                assets/res/old/treasure/circle10.png
+560 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/idle.anim
+227 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame62.png
+232 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame333.png
+241 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame321.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame258.png
+5 kb                 assets/res/old/_resources/004_camping/[shader]/fx_basic_additive.shader
+43 kb                assets/res/fbx/woman_npc_2_seller_modelilng.fbx
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame255.png
+2 kb                 assets/res/old/toms/car/chairt 1.mat
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame367.png
+257 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame216.png
+271 kb               assets/res/env/give_dream/texture/ship_tile_defaultmaterial_basecolor.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame327.png
+167 kb               assets/res/as_magic_aura_construction_kit_free/demo scene/materials/aura_1/particle_1.png
+212 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame14.png
+266 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame183.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame110.png
+237 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame69.png
+257 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame280.png
+251 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame54.png
+285 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame97.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame170.png
+295 kb               packages/zepeto.character.controller/runtime/_resources/animatorcontroller/zepetoanimatorv2.controller
+251 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame52.png
+728 kb               assets/res/env/give_dream/texture/cp_plants_01.png
+236 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame87.png
+828 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moveturn.anim
+42 kb                assets/res/fbx/npc/man/man_face_col_512.png
+2 kb                 assets/res/fbx/npc/man/man_npc_1_sitting_2.controller
+30 kb                assets/res/fbx/npc/woman/eye_l_col_512.png
+299 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame137.png
+248 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame168.png
+111 kb               assets/res/env/give_dream/texture/leaf1.png
+1 mb                 assets/res/env/give_dream/texture/odu_atlas_none_basecolor.png
+3 mb                 assets/res/env/give_dream/texture/cbs_main_tex.png
+226 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame63.png
+562 kb               assets/chungju_airport/texture/land_ju_defaultmaterial_basecolor.png
+2 kb                 assets/res/fbx/npc/man/npc_man01_eye_l_col_512.mat
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_idle.anim
+49 kb                assets/res/image/ui/상단 팝업/old/할머니 짐찾아줘 대사.png
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame166.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_off.anim
+2 kb                 assets/res/old/treasure/treasure.mat
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame30.png
+293 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame154.png
+4 kb                 assets/res/env/give_dream/shader_code/water.shader
+1 kb                 assets/res/fbx/potiani/potimove.controller
+248 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame313.png
+198 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame343.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame212.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame232.png
+14 kb                assets/res/old/_resources/004_camping/[shader]/fx_master_alphablend_two.shader
+5 kb                 packages/zepeto.character.controller/runtime/_resources/images/touchpad_handle_icon.png
+2 kb                 assets/res/env/give_dream/material/lee.mat
+192 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame84.png
+241 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame274.png
+5 kb                 packages/zepeto.character.controller/runtime/_resources/images/touchpad_jump_icon.png
+241 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame70.png
+266 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame178.png
+267 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame186.png
+37 kb                assets/res/image/ui/상단 팝업/여권 획득.png
+2 kb                 assets/res/fbx/npc/man/npc_man_eyelashes_shd.mat
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame71.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame247.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame347.png
+2 kb                 assets/chungju_airport/material/tree.mat
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame28.png
+287 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame99.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame55.png
+297 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame139.png
+12 kb                assets/chungju_airport/chungju_setting_water.fbx
+509 kb               assets/res/image/ui/퀘스트/퀘스트창8.png
+728 kb               assets/chungju_airport/texture/cp_plants_01.png
+46 kb                assets/res/image/ui/상단 팝업/버스 티켓 확인.png
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame101.png
+436 kb               assets/res/image/ui/퀘스트/퀘스트창4.png
+562 kb               assets/models/anim/notuse/xbot@driving.fbx
+3 mb                 assets/chungju_airport/texture/cp_tent_01 1.png
+1 mb                 assets/chungju_airport/texture/land_to_land.001_basecolor.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame53.png
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame325.png
+13 kb                assets/res/old_/treasure chest (2).prefab
+2 kb                 assets/chungju_airport/asphalt.mat
+2 kb                 assets/res/old/treasure/treasure_circle.mat
+2 kb                 assets/chungju_airport/wood.mat
+280 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame198.png
+2 mb                 assets/res/image/ui/특산물 팝업/6익스트림루지.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame267.png
+460 kb               assets/res/as_magic_aura_construction_kit_free/demo scene/materials/aura_1/spiral_doodle_1.png
+4 mb                 assets/models/anim/man_npc_2_zipline_2.fbx
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame348.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame219.png
+2 kb                 assets/res/env/give_dream/material/ship_tile.mat
+8 kb                 assets/res/image/ui/버튼 모음/확인 버튼.png
+214 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame5.png
+37 kb                assets/res/image/ui/상단 팝업/ox 선물상자 미확인.png
+285 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame98.png
+34 kb                assets/res/old/_resources/[scriptsshader]/dynamicstarrysky/models/skysphere.fbx
+2 kb                 assets/res/env/give_dream/material/material33.mat
+28 kb                assets/res/fbx/npc/man/zepeto_colorchart.png
+1 kb                 assets/res/fbx/potiani/potihi.controller
+2 kb                 assets/res/env/give_dream/material/sky.mat
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame211.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame345.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame230.png
+214 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame9.png
+257 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame284.png
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame100.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame176.png
+2 mb                 assets/res/env/give_dream/texture/tent_basecolor.png
+260 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame285.png
+2 kb                 assets/res/env/give_dream/material/shirup.mat
+247 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame45.png
+291 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame149.png
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame13.png
+2 kb                 assets/res/env/chungju_airport/material/bottom.mat
+245 kb               assets/res/env/give_dream/texture/campingtexture_3.png
+2 kb                 assets/res/old/teleport2/teleport_gradient 1.mat
+3 mb                 assets/res/fbx/npc/woman/woman_npc_1_poti_2.fbx
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame20.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame85.png
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame24.png
+2 mb                 assets/res/image/ui/로딩화면/로딩2.png
+2 kb                 assets/res/env/give_dream/material/tree.mat
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame25.png
+292 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame151.png
+237 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame132.png
+877 kb               assets/res/image/ui/특산물 팝업/3포도.png
+224 kb               assets/res/npc/man_npc_1_sitting_2.prefab
+187 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame81.png
+273 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame91.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame210.png
+277 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame194.png
+2 kb                 assets/res/env/give_dream/material/colorchart.mat
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame227.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame106.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/action2.anim
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame56.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame205.png
+246 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame277.png
+7 kb                 packages/zepeto.character.controller/runtime/_resources/animatorcontroller/uicontrollertouchpadhandle.controller
+1 kb                 assets/res/fbx/npc/woman/woman_ani_hi02.controller
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame239.png
+6 kb                 assets/res/env/give_dream/shader_code/tree_leaf.shader
+2 kb                 assets/res/env/give_dream/material/food.mat
+2 kb                 assets/res/image/ui/ox퀴즈/x.png
+461 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/movewalkfast.anim
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame363.png
+1 mb                 assets/res/image/ui/기타/충주호 행 버스티켓 획득 팝업창.png
+1 mb                 assets/res/image/ui/ox퀴즈/선물상자 획득.png
+1 kb                 assets/res/fbx/npc/man/man_ani_lookround.controller
+12 kb                packages/zepeto.character.controller/runtime/_resources/images/touchpad_jump_base.png
+254 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame303.png
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame373.png
+24 kb                assets/chungju_airport/chungju_settingcolider 1.fbx
+248 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame278.png
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame39.png
+1 mb                 assets/res/old/toms3/lightmap-2_comp_light.exr
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame187.png
+2 kb                 assets/res/old_/tams_car_02 (1).prefab
+5 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/6_dance.anim
+44 kb                assets/res/image/ui/상단 팝업/입국장 출구.png
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame319.png
+28 kb                assets/res/old/toms/car/zepeto_colorchart.png
+2 kb                 assets/res/old/treasure/treasure_point.mat
+44 kb                assets/res/image/ui/상단 팝업/카메라 켜짐.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame287.png
+225 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame60.png
+282 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame201.png
+1 mb                 assets/res/fbx/potiani/poti_ani_hi.fbx
+285 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame202.png
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame328.png
+1 mb                 assets/res/old/toms3/lightmap-0_comp_light.exr
+232 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame126.png
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame236.png
+198 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame356.png
+2 kb                 assets/res/env/give_dream/material/land2.mat
+3 mb                 assets/res/env/chungju_airport/texture/1f-2f_material_basecolor.png
+135 kb               assets/res/old/toms3/reflectionprobe-0.exr
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame38.png
+2 kb                 assets/res/env/give_dream/material/tent.mat
+40 kb                assets/res/image/ui/상단 팝업/여권 없음.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame207.png
+225 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame61.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame290.png
+514 kb               assets/res/image/ui/퀘스트/퀘스트창10.png
+2 kb                 assets/res/material/materials/carrier 6.mat
+1 mb                 assets/res/image/ui/특산물 팝업/2대추.png
+158 kb               assets/res/fbx/poti_ani_move_modeling.fbx
+300 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame141.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame259.png
+223 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame59.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame311.png
+162 kb               assets/chungju_airport/texture/land.jpg
+1 mb                 assets/models/anim/ani_hand_can.fbx
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame12.png
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame229.png
+170 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame82.png
+242 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame167.png
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame317.png
+476 kb               assets/res/image/ui/퀘스트/퀘스트창6.png
+2 kb                 assets/res/env/give_dream/material/grass.mat
+255 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame263.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame308.png
+2 kb                 assets/res/fbx/light.mat
+2 kb                 assets/res/old/_resources/[materials]/colortexture_001.mat
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame115.png
+248 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame46.png
+284 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame104.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame172.png
+1 kb                 assets/res/old/toms3/first.lighting
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame40.png
+975 kb               assets/chungju_airport/jipline_defaultmaterial_basecolor.png
+2 kb                 assets/res/material/materials/carrier 1.mat
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame266.png
+618 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpidle.anim
+451 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/stamp.anim
+3 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/5_sleep.anim
+2 kb                 assets/res/env/give_dream/material/leaf1.mat
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame323.png
+214 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame3.png
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame146.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame245.png
+259 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame262.png
+287 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame204.png
+2 kb                 assets/res/material/fxt_smoke_04.mat
+239 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame322.png
+2 kb                 assets/chungju_airport/bridge_nan.mat
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame351.png
+2 kb                 assets/res/fbx/npc/woman/eye_l_col_512.mat
+296 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame135.png
+282 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame191.png
+251 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame163.png
+266 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame179.png
+141 kb               assets/res/env/chungju_airport/water 1.png
+254 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame162.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame131.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/v2/movewalk.anim
+253 kb               assets/res/env/give_dream/texture/lock_wood_colorchart_xi_home_no_metal_basecolor.png
+19 kb                assets/res/env/give_dream/shader_code/moon.shader
+294 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame134.png
+222 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame76.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame352.png
+14 kb                assets/res/material/fx_round01.png
+1014 kb              packages/zepeto.character.controller/runtime/_resources/animations/base/v2/idle.anim
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame231.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/fall_end.anim
+286 kb               assets/res/env/give_dream/texture/cbs_ground_rockcliff.png
+17 mb                assets/res/old_/0905.fbx
+48 kb                assets/res/image/ui/상단 팝업/버스 티켓 없음.png
+236 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame67.png
+793 kb               assets/res/image/img.jpg
+36 kb                assets/res/image/ui/버튼 모음/착용 버튼.png
+395 b                assets/res/fbx/light_light_emissive.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame42.png
+428 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/hand_idle_01.anim
+31 kb                packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions
+259 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame221.png
+3 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_ziggle.anim
+2 mb                 assets/res/old/toms3/lightmap-4_comp_light.exr
+254 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame279.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_off.anim
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame144.png
+67 mb                assets/res/env/chungju_airport/청주공항_ver0914.fbx
+2 kb                 assets/chungju_airport/water_shader.shader
+2 kb                 assets/res/old_/tams_car_02 (1) 1.prefab
+1 mb                 assets/res/image/ui/퀘스트/퀘스트창11.png
+600 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingslight.anim
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame276.png
+295 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame148.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame331.png
+251 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame157.png
+215 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame1.png
+215 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame75.png
+284 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame96.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame164.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame226.png
+2 kb                 assets/res/as_magic_aura_construction_kit_free/demo scene/materials/aura_1/particle.mat
+241 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame320.png
+271 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame93.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame254.png
+380 kb               assets/res/image/ui/기타/할머니 답례.png
+256 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame299.png
+127 kb               assets/res/image/ui/ox퀴즈/q2.png
+212 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame26.png
+223 kb               assets/res/npc/man_ani_lookround.prefab
+2 kb                 assets/res/fbx/npc/woman/eye_r_col_512.mat
+2 mb                 assets/res/fbx/npc/woman/woman_npc_2_seller_3.fbx
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_move.anim
+2 kb                 assets/res/image/ui/버튼 모음/x버튼1.png
+795 b                assets/res/material/build it effect addictive.shader
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame35.png
+2 kb                 assets/res/fbx/npc/woman/face_col_512.mat
+29 kb                assets/res/env/give_dream/texture/stylized_grass256.png
+220 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame73.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame302.png
+206 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame86.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame312.png
+4 kb                 assets/res/env/give_dream/texture/odu_atlas_none_emissive.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame156.png
+50 kb                assets/res/fbx/npc/woman/face_col_512.png
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame48.png
+224 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame58.png
+2 kb                 assets/chungju_airport/material/land.mat
+2 kb                 assets/res/old/teleport/teleport_m.mat
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame158.png
+978 kb               assets/chungju_airport/texture/land_to_bridge_basecolor.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame293.png
+281 kb               assets/res/env/give_dream/texture/colorchart.png
+255 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame301.png
+227 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame121.png
+278 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame94.png
+295 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame136.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame309.png
+447 kb               assets/res/old/toms/car/tams_car_02.fbx
+232 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame234.png
+284 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame89.png
+255 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame281.png
+442 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpmove.anim
+2 kb                 assets/chungju_airport/zip_line.mat
+71 kb                assets/res/fbx/npc/man/man_eyelashes_col_512.png
+215 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame119.png
+244 kb               assets/chungju_airport/texture/cbs_sakura_wood.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame273.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame213.png
+290 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame145.png
+4 mb                 assets/res/env/give_dream/texture/house_full_defaultmaterial_basecolor.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame180.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame361.png
+410 kb               assets/res/fbx/potiani/poti_ani_jump.fbx
+18 kb                packages/zepeto.character.controller/runtime/_resources/animatorcontroller/zepetoanimator.controller
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame291.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame244.png
+4 kb                 assets/res/env/give_dream/texture/color_chart_256.png
+141 kb               assets/res/old/toms/water/water.png
+236 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame324.png
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame336.png
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame372.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame51.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame108.png
+951 kb               assets/res/env/give_dream/texture/bed_color.png
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame11.png
+1 mb                 assets/res/image/ui/특산물 팝업/4스카이트레일.png
+2 kb                 assets/res/old_/new material.mat
+181 kb               assets/res/npc/woman_npc_1_poti_2.prefab
+295 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame138.png
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame16.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame130.png
+513 kb               assets/res/image/ui/퀘스트/퀘스트창9.png
+3 kb                 assets/res/envi/camera.prefab
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame329.png
+156 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame83.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame349.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame228.png
+3 mb                 assets/models/anim/zepetobasemodel.prefab
+3 mb                 assets/chungju_airport/texture/chungju_dam_defaultmaterial_basecolor.png
+231 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame127.png
+2 kb                 assets/res/env/give_dream/material/bridge.mat
+580 kb               assets/res/env/give_dream/texture/sky_summer.png
+298 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame155.png
+259 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame214.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame283.png
+280 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame193.png
+280 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame199.png
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame22.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame209.png
+2 kb                 assets/res/env/give_dream/material/garden_bottom.mat
+2 kb                 assets/res/env/give_dream/material/car_logo.mat
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame147.png
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame6.png
+207 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame79.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame242.png
+50 mb                assets/res/env/give_dream/3d_model/scene_setting.fbx
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame371.png
+212 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame15.png
+374 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moverunfast.anim
+232 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame65.png
+220 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame74.png
+15 mb                assets/models/anim/notuse/erika_archer@flying.fbx
+26 kb                assets/models/zepetonpcanimator.controller
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame292.png
+50 kb                assets/res/old/treasure/circle7.png
+422 kb               assets/res/image/ui/퀘스트/퀘스트창2.png
+416 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/moverun.anim
+226 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame120.png
+2 kb                 assets/chungju_airport/material/leaf.mat
+947 b                assets/res/old/_resources/005_fall/shaders/transparentcutouttwoside.shader
+232 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame129.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame270.png
+1 mb                 assets/res/old/toms3/lightmap-3_comp_light.exr
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame220.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame80.png
+5 mb                 assets/res/old_/image/1f-2f_basecolor.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame173.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame224.png
+234 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame225.png
+1 kb                 assets/res/fbx/potiani/potijump.controller
+2 kb                 assets/res/fbx/npc/woman/woman_npc_2_seller_3.controller
+2 kb                 assets/chungju_airport/material/dam.mat
+367 kb               assets/res/fbx/ipjubong.png
+3 mb                 assets/res/env/give_dream/texture/cp_tent_01.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame353.png
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame68.png
+282 kb               assets/res/fbx/potiani/poti_ani_move.fbx
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame165.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame294.png
+266 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame175.png
+2 kb                 assets/chungju_airport/material/zepeto_color.mat
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame237.png
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame114.png
+24 kb                assets/res/old/teleport2/circle5.png
+28 kb                assets/res/env/give_dream/texture/zepeto_colorchart.png
+209 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame31.png
+239 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame338.png
+255 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame265.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame298.png
+209 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame32.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame181.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame111.png
+2 kb                 assets/res/env/give_dream/material/bark.mat
+2 kb                 assets/res/fbx/npc/man/npc_man01_face_shd.mat
+256 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame215.png
+240 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame341.png
+284 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame200.png
+3 kb                 assets/res/image/ui/ox퀴즈/o.png
+2 kb                 assets/res/env/chungju_airport/material/color.mat
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame113.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame344.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame177.png
+230 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame64.png
+182 kb               assets/res/image/ui/ox퀴즈/q3.png
+2 mb                 assets/res/old/toms3/lightmap-6_comp_light.exr
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame27.png
+65 kb                assets/res/image/청주공항 15s b en-1(480p)gif/gif.anim
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame223.png
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame268.png
+464 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpdouble.anim
+329 kb               assets/chungju_airport/texture/bridge_tex_defaultmaterial_basecolor.png
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame33.png
+2 kb                 assets/res/env/give_dream/material/wateer.mat
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame246.png
+2 kb                 assets/chungju_airport/plant.mat
+1 kb                 assets/res/fbx/npc/woman/woman_npc_1_poti_2.controller
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame238.png
+134 kb               assets/res/image/ui/ox퀴즈/q4.png
+13 kb                packages/zepeto.character.controller/runtime/_resources/images/touchpad_handle_base.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame368.png
+246 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame316.png
+288 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame102.png
+2 kb                 assets/res/env/give_dream/material/color_chart_main.mat
+219 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame118.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame251.png
+2 kb                 assets/res/env/give_dream/material/ten01.mat
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame21.png
+296 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame153.png
+238 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame340.png
+200 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame117.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/action1.anim
+2 kb                 assets/res/env/give_dream/material/dome.mat
+2 kb                 assets/res/material/materials/carrier 4.mat
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame310.png
+343 b                assets/res/env/give_dream/texture/jomyung2_material _33_emissive.png
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame233.png
+195 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame116.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame182.png
+408 b                assets/res/fbx/light_light_basecolor.png
+2 kb                 assets/res/env/give_dream/material/zepeto_color_chart.mat
+2 kb                 assets/res/env/give_dream/material/rock.mat
+59 kb                assets/res/old/toms/car/tams_logo_256.png
+2 kb                 assets/res/env/chungju_airport/mt.mat
+1 mb                 assets/models/anim/grandmother_ani_08.fbx
+1 mb                 assets/res/image/ui/특산물 팝업/5패러글라이딩.png
+3 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_ziggle.anim
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_on.anim
+257 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame300.png
+136 kb               assets/res/fbx/npc/woman/eyelashes_col_512.png
+229 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame123.png
+2 mb                 assets/res/env/give_dream/texture/land_none2_basecolor.png
+35 kb                assets/res/image/ui/상단 팝업/심사대 통과.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame330.png
+241 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame275.png
+632 kb               assets/chungju_airport/texture/bunsu_defaultmaterial_basecolor.png
+4 mb                 assets/res/env/give_dream/texture/fall_main_tex.png
+2 kb                 assets/res/env/give_dream/material/cloud.mat
+193 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame107.png
+30 kb                assets/res/fbx/npc/man/eye_r_col_512.png
+2 kb                 assets/res/fbx/npc/man/npc_man01_eye_r_shd.mat
+2 kb                 assets/res/env/give_dream/material/rock_cliff.mat
+324 kb               assets/res/env/chungju_airport/texture/color.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame297.png
+30 kb                assets/res/fbx/npc/man/eye_l_col_512.png
+244 kb               assets/res/env/give_dream/texture/cbs_sakura_wood.png
+259 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame296.png
+7 kb                 packages/zepeto.character.controller/runtime/_resources/animatorcontroller/uicontrollertouchpadhandleorigin.controller
+73 kb                assets/chungju_airport/plant.png
+245 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame318.png
+265 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame184.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame72.png
+247 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame44.png
+199 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame354.png
+229 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame125.png
+2 kb                 assets/res/old/teleport2/teleport_circle.mat
+451 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/jumpdash.anim
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame369.png
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame34.png
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame256.png
+3 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/charactershadow.prefab
+360 b                assets/models/hand avatar mask.mask
+4 mb                 assets/res/fbx/npc/man/man_npc_1_sitting_2.fbx
+2 kb                 assets/res/material/materials/carrier 5.mat
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame243.png
+222 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame77.png
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame295.png
+22 kb                assets/res/old/teleport2/circle4.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/animations/ui/controller/touchpad_handle_origin_on.anim
+2 kb                 assets/res/material/materials/carrier 2.mat
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame248.png
+4 mb                 assets/res/fbx/npc/man/man_ani_lookround.fbx
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame252.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame169.png
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame29.png
+292 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame143.png
+284 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame203.png
+2 kb                 assets/res/env/chungju_airport/material/glass.mat
+869 kb               assets/res/env/give_dream/texture/bridge_defaultmaterial_basecolor.png
+2 kb                 assets/chungju_airport/water_fok.mat
+41 kb                assets/res/image/ui/상단 팝업/ox 안함.png
+1 kb                 assets/res/image/청주공항 15s b en-1(480p)gif/frame0.controller
+280 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame196.png
+2 kb                 assets/res/fbx/npc/woman/eyelashes_col_512 1.mat
+212 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame17.png
+251 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame307.png
+521 kb               assets/res/image/ui/퀘스트/퀘스트창7.png
+298 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame152.png
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame190.png
+249 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame171.png
+228 kb               assets/res/as_magic_aura_construction_kit_free/demo scene/aura_1.prefab
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame359.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame326.png
+1 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.png
+228 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame334.png
+266 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame208.png
+271 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame92.png
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame257.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/gesture/4_ok.anim
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame109.png
+30 kb                assets/res/fbx/npc/woman/eye_r_col_512.png
+193 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame370.png
+2 kb                 assets/res/old/teleport2/teleport_gradient.mat
+261 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame222.png
+2 kb                 assets/res/image/ui/버튼 모음/x버튼2.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame66.png
+286 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame88.png
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame4.png
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/v2/landingdeep.anim
+283 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame95.png
+277 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame197.png
+46 kb                assets/res/image/ui/상단 팝업/캐리어 없음.png
+240 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame339.png
+2 kb                 assets/chungju_airport/bunsu.mat
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame23.png
+252 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame305.png
+198 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame358.png
+43 kb                assets/res/old/_resources/004_camping/[texture]/fxt_smoke_02.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame160.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame272.png
+324 kb               assets/res/old_/image/kakaotalk_20220905_171354902.png
+240 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame342.png
+2 kb                 assets/chungju_airport/board.mat
+2 kb                 assets/chungju_airport/land.mat
+572 kb               assets/res/env/give_dream/texture/ship_ship_basecolor.png
+1 kb                 assets/res/old/new lighting settings 1.lighting
+287 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame103.png
+2 kb                 assets/res/env/give_dream/material/fall_main_tex.mat
+263 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame260.png
+489 kb               assets/res/image/ui/퀘스트/퀘스트창1.png
+301 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/v2/falling.anim
+210 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame36.png
+256 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame264.png
+229 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame122.png
+162 kb               assets/chungju_airport/texture/board.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame360.png
+53 kb                assets/res/old/treasure/circle9.png
+233 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame332.png
+2 kb                 assets/chungju_airport/bridge.mat
+678 kb               assets/res/old/toms3/lightingdata.asset
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame8.png
+66 mb                assets/res/envi/_ver0907 (1).fbx
+3 kb                 assets/res/image/자동차 탑승 종료 ui.png
+196 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame365.png
+28 kb                assets/chungju_airport/texture/zepeto_colorchart.png
+940 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/run.anim
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame288.png
+461 kb               assets/res/image/ui/퀘스트/퀘스트창5.png
+262 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame240.png
+2 kb                 assets/res/material/materials/de.mat
+2 kb                 assets/res/env/give_dream/material/rock_cliff2.mat
+143 kb               assets/res/env/give_dream/texture/summer_cloud.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame366.png
+28 kb                assets/res/old/_resources/[materials]/texture/colortexture_001.png
+3 mb                 assets/res/fbx/npc/woman/woman_ani_hi02.fbx
+213 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame7.png
+2 kb                 assets/chungju_airport/small_bridge.mat
+214 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame2.png
+253 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame304.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.mat
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/eventsystem.prefab
+231 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame235.png
+2 kb                 assets/res/material/fx_ray02_add.mat
+331 kb               assets/res/env/give_dream/texture/cbs_ground_rock.png
+197 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame357.png
+739 kb               assets/res/image/ui/특산물 팝업/1사과.png
+2 kb                 assets/res/env/give_dream/material/land1.mat
+194 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame105.png
+324 kb               assets/res/env/give_dream/texture/campingtexture_1.png
+215 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame0.png
+216 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame78.png
+235 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame128.png
+300 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame142.png
+211 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame19.png
+264 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame189.png
+2 kb                 assets/res/env/give_dream/material/full_house.mat
+198 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame112.png
+180 kb               assets/res/npc/woman_ani_hi02.prefab
+250 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame269.png
+278 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame90.png
+258 kb               assets/res/image/청주공항 15s b en-1(480p)gif/frame261.png
+[resources]
+0 b                  assets/resources    
+[streamingAssets]

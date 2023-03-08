@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 78ca3d68d1fa782418d0aedc911e5768
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst GameManager_1 = require(\"./GameManager\");\r\nclass
+    ZipLineStater extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.points = new Array();\r\n        this.points = this.transform.GetComponentsInChildren($typeof(UnityEngine_1.Transform));\r\n       
+    this.points.shift();\r\n        this._speed = 0.015;\r\n        GameManager_1.default.instance.ZipRideSetting(this.points,
+    this._speed);\r\n    }\r\n}\r\nexports.default = ZipLineStater;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWmlwTGluZVN0YXRlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlppcExpbmVTdGF0ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSw2Q0FBdUU7QUFDdkUsaURBQXFEO0FBQ3JELCtDQUF3QztBQUV4QyxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBSTVELEtBQUs7UUFDRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksS0FBSyxFQUFFLENBQUM7UUFDMUIsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLHVCQUF1QixTQUFDLHVCQUFTLEVBQUcsQ0FBQztRQUNsRSxJQUFJLENBQUMsTUFBTSxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3BCLElBQUksQ0FBQyxNQUFNLEdBQUcsS0FBSyxDQUFDO1FBQ3BCLHFCQUFXLENBQUMsUUFBUSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUNsRSxDQUFDO0NBQ0o7QUFYRCxnQ0FXQyJ9","assetPath":"Assets/ZepetoScripts/ZipLineStater.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"_speed","type":"System.Single","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"points","type":"UnityEngine.Transform[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ZipLineStater","description":""},"isCompiled":true}'
+  typescriptHash: 4f08e2f9e1c033f3f12a300565d5a078
+  onlyWriteTrigger: 0

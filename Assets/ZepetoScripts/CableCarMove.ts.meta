@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 2763e5eb7e812c344885f030f7011aff
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass CableCarMove extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this._points
+    = new Array();\r\n        this._cnt = 0;\r\n    }\r\n    Start() {\r\n    }\r\n   
+    Update() {\r\n        this.Move();\r\n    }\r\n    Move() {\r\n        this.transform.position
+    = UnityEngine_1.Vector3.MoveTowards(this.transform.position, this._points[this._cnt].position,
+    this._speed * UnityEngine_1.Time.deltaTime);\r\n        let dist = UnityEngine_1.Vector3.Distance(this._points[this._cnt].position,
+    this.transform.position);\r\n        if (dist < 0.1) {\r\n            ++this._cnt;\r\n       
+    }\r\n        if (this._cnt == this._points.length) {\r\n            this.Reset(this._points[0].position);\r\n       
+    }\r\n    }\r\n    Reset(startposition) {\r\n        this._cnt = 0;\r\n       
+    this.transform.position = startposition;\r\n        this.gameObject.SetActive(false);\r\n   
+    }\r\n}\r\nexports.default = CableCarMove;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FibGVDYXJNb3ZlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2FibGVDYXJNb3ZlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1GO0FBQ25GLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUVXLFlBQU8sR0FBZSxJQUFJLEtBQUssRUFBRSxDQUFDO1FBQ2pDLFNBQUksR0FBWSxDQUFDLENBQUM7SUEyQjlCLENBQUM7SUF4QkcsS0FBSztJQUNMLENBQUM7SUFFRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ2hCLENBQUM7SUFFTyxJQUFJO1FBQ1IsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEdBQUcscUJBQU8sQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxNQUFNLEdBQUcsa0JBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUN2SSxJQUFJLElBQUksR0FBRyxxQkFBTyxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQyxRQUFRLEVBQUUsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQztRQUN2RixJQUFJLElBQUksR0FBRyxHQUFHLEVBQUM7WUFDWCxFQUFFLElBQUksQ0FBQyxJQUFJLENBQUM7U0FDZjtRQUVELElBQUksSUFBSSxDQUFDLElBQUksSUFBSSxJQUFJLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBQztZQUNqQyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUM7U0FDeEM7SUFDTCxDQUFDO0lBRU8sS0FBSyxDQUFDLGFBQXVCO1FBQ2pDLElBQUksQ0FBQyxJQUFJLEdBQUcsQ0FBQyxDQUFDO1FBQ2QsSUFBSSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEdBQUcsYUFBYSxDQUFDO1FBQ3hDLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ3JDLENBQUM7Q0FDSjtBQTlCRCwrQkE4QkMifQ==","assetPath":"Assets/ZepetoScripts/preset/CableCarMove.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"_points","type":"UnityEngine.Transform[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"_speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CableCarMove","description":""},"isCompiled":true}'
+  typescriptHash: e0c542895ea79233c26b62033b05dc00

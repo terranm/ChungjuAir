@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: d02cd2f2f2743854784c6e542f9761ae
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    GameManager_1 = require(\"./GameManager\");\r\nclass Sit extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.transform.parent.GetChild(2).gameObject.SetActive(false);\r\n   
+    }\r\n    OnTriggerExit(coll) {\r\n        if (coll.transform.tag == \"Player\")
+    {\r\n            GameManager_1.default.instance.SitOut(this.transform);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = Sit;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2l0b3V0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2l0b3V0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsaURBQXFEO0FBQ3JELCtDQUF3QztBQUV4QyxNQUFxQixHQUFJLFNBQVEscUNBQXFCO0lBRWxELEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNsRSxDQUFDO0lBRUQsYUFBYSxDQUFDLElBQWE7UUFDdkIsSUFBRyxJQUFJLENBQUMsU0FBUyxDQUFDLEdBQUcsSUFBSSxRQUFRLEVBQUM7WUFDOUIscUJBQVcsQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztTQUMvQztJQUNMLENBQUM7Q0FDSjtBQVhELHNCQVdDIn0=","assetPath":"Assets/ZepetoScripts/Sitout.ts","manifest":{"properties":[],"name":"Sit","description":""},"isCompiled":true}'
+  typescriptHash: 36dbd325f96bbd7810c44be6c6f80ad9
+  onlyWriteTrigger: 0

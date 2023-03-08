@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: dfce3d80c7325bf489e06bb6015bc588
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst CarrierCreater_1 = require(\"./CarrierCreater\");\r\nclass
+    BeltEnd extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnTriggerEnter(col)
+    {\r\n        if (col.gameObject.tag == \"Carrier\") {\r\n            this.carrierCreater.GetComponent($typeof(CarrierCreater_1.default)).CarrierDestory(col.gameObject.name);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = BeltEnd;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQmVsdEVuZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkJlbHRFbmQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUQ7QUFDbkQsaURBQXFEO0FBQ3JELHFEQUE4QztBQUU5QyxNQUFxQixPQUFRLFNBQVEscUNBQXFCO0lBRXRELGNBQWMsQ0FBQyxHQUFjO1FBQ3pCLElBQUksR0FBRyxDQUFDLFVBQVUsQ0FBQyxHQUFHLElBQUksU0FBUyxFQUFDO1lBQ2hDLElBQUksQ0FBQyxjQUFjLENBQUMsWUFBWSxTQUFDLHdCQUFjLEdBQUksY0FBYyxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLENBQUM7U0FDMUY7SUFDTCxDQUFDO0NBQ0o7QUFQRCwwQkFPQyJ9","assetPath":"Assets/ZepetoScripts/preset/BeltEnd.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"carrierCreater","type":"UnityEngine.GameObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"BeltEnd","description":""},"isCompiled":true}'
+  typescriptHash: 520b8255c3dfcfacd5e25c3aba0ea3d6
